@@ -1,8 +1,8 @@
-CREATE DATABASE job_market_db;
+CREATE DATABASE IF NOT EXISTS job_market_db;
 USE job_market_db;
 
-CREATE TABLE jobs(
-	job_id INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS jobs (
+    job_id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     company VARCHAR(255) NOT NULL,
     city VARCHAR(100),
@@ -13,13 +13,11 @@ CREATE TABLE jobs(
     category VARCHAR(100),
     date_posted DATE,
     date_scraped DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
-    
 );
 
-CREATE TABLE skills(
-	skill_id INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS skills (
+    skill_id INT AUTO_INCREMENT PRIMARY KEY,
     job_id INT NOT NULL,
     skill_name VARCHAR(100) NOT NULL,
     FOREIGN KEY (job_id) REFERENCES jobs(job_id) ON DELETE CASCADE
-)
-
+);
