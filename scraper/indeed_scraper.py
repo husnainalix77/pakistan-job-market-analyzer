@@ -3,6 +3,7 @@ import undetected_chromedriver as uc
 import time
 
 def setup_driver():
+    """Configures and launches an undetected Chrome browser instance"""
     options = uc.ChromeOptions()
     options.add_argument("--start-maximized")
     driver = uc.Chrome(options=options, version_main=150)
@@ -10,7 +11,7 @@ def setup_driver():
     return driver
 
 def scrape_jobs(driver, url):
-    """navigates to the URL and waits for page to load"""
+    """Navigates to the URL and waits for page to load"""
     driver.get(url)
     time.sleep(5)
     soup = BeautifulSoup(driver.page_source, "html.parser")
