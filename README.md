@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <div align="center">
 
 # 🇵🇰 Pakistan Job Market Analyzer & Salary Predictor
@@ -84,7 +83,7 @@ Indeed Pakistan
 | Phase | Description | Status |
 |---|---|---|
 | 1 | Project Setup & MySQL Schema | ✅ Complete |
-| 2 | Web Scraping — Indeed Pakistan | 🔄 In Progress |
+| 2 | Web Scraping — Indeed Pakistan | ✅ Complete |
 | 3 | Database Storage with SQLAlchemy | ⏳ Upcoming |
 | 4 | Data Cleaning & EDA | ⏳ Upcoming |
 | 5 | Feature Engineering | ⏳ Upcoming |
@@ -94,22 +93,36 @@ Indeed Pakistan
 
 ---
 
+## 📊 Phase 2 Results
+
+- ✅ Built automated scraper using Selenium + undetected-chromedriver
+- ✅ Bypassed Cloudflare bot detection on Rozee.pk — switched to Indeed Pakistan
+- ✅ Implemented pagination — scrapes 10 pages per search query
+- ✅ Scraped **5 job categories × 3 cities × 10 pages = 1,566 real job listings**
+- ✅ Data saved to CSV with Title, Company, City, Salary columns
+- ✅ Weekly scheduler configured for automated scraping every Sunday
+
+**Categories scraped:** Software Engineer, Data Analyst, Mechanical Engineer, Accountant, Electrical Engineer
+
+**Cities covered:** Lahore, Karachi, Islamabad
+
+---
+
 ## 🗄️ Database Schema
 
 ```sql
 -- Jobs table
 CREATE TABLE jobs (
-    job_id        INT AUTO_INCREMENT PRIMARY KEY,
-    title         VARCHAR(255) NOT NULL,
-    company       VARCHAR(255) NOT NULL,
-    city          VARCHAR(100),
-    salary_min    INT DEFAULT NULL,
-    salary_max    INT DEFAULT NULL,
+    job_id           INT AUTO_INCREMENT PRIMARY KEY,
+    title            VARCHAR(255) NOT NULL,
+    company          VARCHAR(255) NOT NULL,
+    city             VARCHAR(100),
+    salary           VARCHAR(255) DEFAULT NULL,
     experience_years FLOAT DEFAULT NULL,
-    education     VARCHAR(100),
-    category      VARCHAR(100),
-    date_posted   DATE,
-    date_scraped  DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+    education        VARCHAR(100),
+    category         VARCHAR(100),
+    date_posted      DATE,
+    date_scraped     DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
 -- Skills table (normalized — one row per skill per job)
@@ -148,10 +161,13 @@ pip install -r requirements.txt
 # 4. Setup MySQL database
 # Open MySQL Workbench → run database/schema.sql
 
-# 5. Run the scraper
+# 5. Run the scraper manually
 python scraper/indeed_scraper.py
 
-# 6. Launch dashboard (Phase 7)
+# 6. Run weekly scheduler
+python scraper/scheduler.py
+
+# 7. Launch dashboard (Phase 7)
 streamlit run app/app.py
 ```
 
@@ -208,6 +224,10 @@ Salary data is tabular, sparse (many None values), and contains
 categorical features (city, education). XGBoost handles all of
 these natively and outperforms linear models on such data.
 
+**Why separate run_full_scrape() function?**
+Avoids code duplication between indeed_scraper.py and scheduler.py.
+Single source of truth — change queries once, both files update.
+
 ---
 
 ## 👨‍💻 About the Author
@@ -235,27 +255,3 @@ University of Engineering & Technology (UET), Lahore
 *Actively committing — check the commit history*
 
 </div>
-=======
-# Pakistan Job Market Analyzer & Salary Predictor
-
-An end-to-end Data Science and Machine Learning project that scrapes 
-real job listings from Rozee.pk, stores them in MySQL, analyzes 
-Pakistan's job market trends, and predicts salaries using ML models.
-
-## Tech Stack
-- Web Scraping: BeautifulSoup, Selenium
-- Database: MySQL + SQLAlchemy
-- Data Science: Pandas, NumPy, Matplotlib, Seaborn
-- Machine Learning: Scikit-learn, XGBoost
-- Web App: Streamlit
-
-## Project Status
-- [x] Phase 1: Project Setup & MySQL Schema
-- [ ] Phase 2: Web Scraping
-- [ ] Phase 3: Database Storage
-- [ ] Phase 4: Data Cleaning & EDA
-- [ ] Phase 5: Feature Engineering
-- [ ] Phase 6: ML Modeling
-- [ ] Phase 7: Streamlit Dashboard
-- [ ] Phase 8: Portfolio Polish
->>>>>>> dcb2de8e1449c8154ba91c56291a829fb208214d
