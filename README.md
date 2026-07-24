@@ -6,6 +6,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-orange?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
+[![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-2.0-red?style=for-the-badge)](https://sqlalchemy.org)
 [![Selenium](https://img.shields.io/badge/Selenium-4.0-green?style=for-the-badge&logo=selenium&logoColor=white)](https://selenium.dev)
 [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Latest-red?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
 [![XGBoost](https://img.shields.io/badge/XGBoost-Latest-blue?style=for-the-badge)](https://xgboost.readthedocs.io)
@@ -69,7 +70,7 @@ Indeed Pakistan
 |---|---|---|
 | Scraping | Selenium + undetected-chromedriver | Bot detection bypass |
 | Parsing | BeautifulSoup4 | HTML extraction |
-| Database | MySQL + SQLAlchemy | Structured storage |
+| Database | MySQL + SQLAlchemy ORM | Structured storage with ORM |
 | Processing | Pandas + NumPy | Cleaning & transformation |
 | Visualization | Matplotlib + Seaborn | EDA plots |
 | ML | Scikit-learn + XGBoost | Prediction models |
@@ -84,7 +85,7 @@ Indeed Pakistan
 |---|---|---|
 | 1 | Project Setup & MySQL Schema | ✅ Complete |
 | 2 | Web Scraping — Indeed Pakistan | ✅ Complete |
-| 3 | Database Storage with SQLAlchemy | ⏳ Upcoming |
+| 3 | Database Storage with SQLAlchemy | ✅ Complete |
 | 4 | Data Cleaning & EDA | ⏳ Upcoming |
 | 5 | Feature Engineering | ⏳ Upcoming |
 | 6 | ML Modeling (Regression + Classification) | ⏳ Upcoming |
@@ -93,12 +94,12 @@ Indeed Pakistan
 
 ---
 
-## 📊 Phase 2 Results
+## 📊 Phase 2 Results — Web Scraping
 
 - ✅ Built automated scraper using Selenium + undetected-chromedriver
-- ✅ Bypassed Cloudflare bot detection on Rozee.pk — switched to Indeed Pakistan
+- ✅ Bypassed Cloudflare bot detection — switched to Indeed Pakistan
 - ✅ Implemented pagination — scrapes 10 pages per search query
-- ✅ Scraped **5 job categories × 3 cities × 10 pages = 1,566 real job listings**
+- ✅ Scraped **5 job categories × 3 cities × 10 pages = 1,566 raw listings**
 - ✅ Data saved to CSV with Title, Company, City, Salary columns
 - ✅ Weekly scheduler configured for automated scraping every Sunday
 
@@ -108,10 +109,25 @@ Indeed Pakistan
 
 ---
 
+## 🗄️ Phase 3 Results — Database Storage
+
+- ✅ SQLAlchemy ORM models defined for `jobs` and `skills` tables
+- ✅ Secure MySQL connection via `.env` credentials — password never in code
+- ✅ `insert_jobs()` — loads CSV, removes duplicates, inserts into MySQL
+- ✅ `get_all_jobs()` — queries database and returns Pandas DataFrame
+- ✅ Duplicate detection — skips existing records on re-run
+- ✅ **620 unique jobs stored in MySQL database**
+
+```
+Run 1: Inserted: 620 | Skipped: 0
+Run 2: Inserted: 0   | Skipped: 620  ← duplicate detection working
+```
+
+---
+
 ## 🗄️ Database Schema
 
 ```sql
--- Jobs table
 CREATE TABLE jobs (
     job_id           INT AUTO_INCREMENT PRIMARY KEY,
     title            VARCHAR(255) NOT NULL,
@@ -125,7 +141,6 @@ CREATE TABLE jobs (
     date_scraped     DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
--- Skills table (normalized — one row per skill per job)
 CREATE TABLE skills (
     skill_id   INT AUTO_INCREMENT PRIMARY KEY,
     job_id     INT NOT NULL,
@@ -158,16 +173,22 @@ source venv/bin/activate     # Mac/Linux
 # 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Setup MySQL database
-# Open MySQL Workbench → run database/schema.sql
+# 4. Create .env file in project root
+echo DB_PASSWORD=your_mysql_password > .env
 
-# 5. Run the scraper manually
+# 5. Setup MySQL database
+python database/models.py
+
+# 6. Run the scraper
 python scraper/indeed_scraper.py
 
-# 6. Run weekly scheduler
+# 7. Insert data into MySQL
+python -m database.db_manager
+
+# 8. Run weekly scheduler
 python scraper/scheduler.py
 
-# 7. Launch dashboard (Phase 7)
+# 9. Launch dashboard (Phase 7)
 streamlit run app/app.py
 ```
 
@@ -185,7 +206,7 @@ pakistan-job-market-analyzer/
 │
 ├── database/
 │   ├── models.py            # SQLAlchemy ORM table definitions
-│   ├── db_manager.py        # Insert, query, update operations
+│   ├── db_manager.py        # Insert, query, duplicate detection
 │   └── schema.sql           # Raw SQL schema reference
 │
 ├── notebooks/
@@ -201,6 +222,8 @@ pakistan-job-market-analyzer/
 ├── app/
 │   └── app.py               # Streamlit dashboard (4 tabs)
 │
+├── .env                     # MySQL credentials (not in repo)
+├── .gitignore
 ├── requirements.txt
 └── README.md
 ```
@@ -214,19 +237,28 @@ Indeed Pakistan loads content dynamically via JavaScript. Standard
 requests/BeautifulSoup cannot render JS. undetected-chromedriver
 bypasses bot detection that blocks standard Selenium.
 
+**Why SQLAlchemy ORM over raw SQL?**
+ORM lets us work with Python objects instead of SQL strings. Safer,
+cleaner, and portable — anyone can recreate the database by running
+models.py without touching MySQL Workbench.
+
+**Why .env for credentials?**
+Passwords never appear in code. .env is in .gitignore so credentials
+never reach GitHub. Industry standard for all production projects.
+
+**Why duplicate detection before insert?**
+Scraper runs weekly — without duplicate detection, same jobs would
+accumulate indefinitely. filter_by() checks title + company + city
+before every insert, keeping data clean automatically.
+
 **Why normalize skills into a separate table?**
-Storing skills as a comma-separated string in one column makes
-querying impossible. A normalized schema lets us query:
-"how many jobs require Python?" in a single SQL statement.
+Storing skills as a comma-separated string makes querying impossible.
+Normalized schema lets us answer "how many jobs require Python?" in
+a single SQL statement.
 
 **Why XGBoost for salary prediction?**
-Salary data is tabular, sparse (many None values), and contains
-categorical features (city, education). XGBoost handles all of
-these natively and outperforms linear models on such data.
-
-**Why separate run_full_scrape() function?**
-Avoids code duplication between indeed_scraper.py and scheduler.py.
-Single source of truth — change queries once, both files update.
+Salary data is tabular, sparse, and contains categorical features.
+XGBoost handles all of these natively and outperforms linear models.
 
 ---
 
