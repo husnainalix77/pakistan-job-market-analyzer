@@ -1,3 +1,20 @@
+"""
+db_manager.py
+=============
+Database operations manager for the Pakistan Job Market Analyzer.
+Handles all interactions between Python and MySQL database using
+SQLAlchemy ORM sessions.
+
+Functions:
+    - insert_jobs: Load CSV data into MySQL with duplicate detection
+    - get_all_jobs: Fetch all jobs from MySQL as Pandas DataFrame
+
+Usage:
+    python -m database.db_manager
+
+Author: Husnain Maroof
+GitHub: https://github.com/husnainalix77
+"""
 from sqlalchemy.orm import sessionmaker
 import pandas as pd
 from database.models import Job, engine
@@ -5,7 +22,21 @@ import datetime
 
 Session = sessionmaker(bind=engine) # session bound to mysql
 
-def insert_jobs(csv_path):
+
+def insert_jobs(csv_path: str) -> None:
+    """
+    Load job listings from CSV and insert into MySQL with duplicate detection.
+    
+    Reads CSV, removes pandas-level duplicates, then checks MySQL for
+    existing records before inserting. Skips any job that already exists
+    based on title + company + city combination.
+    
+    Args:
+        csv_path (str): Path to raw CSV file from scraper
+        
+    Returns:
+        None — prints inserted and skipped counts
+    """
     df = pd.read_csv(csv_path)
     df = df.drop_duplicates(subset=["Title", "Company", "City"])
     session = Session()
@@ -40,7 +71,18 @@ def insert_jobs(csv_path):
     finally:
         session.close()
 
-def get_all_jobs():
+def get_all_jobs() -> pd.DataFrame:
+    """
+    Fetch all job listings from MySQL database.
+    
+    Queries all rows from jobs table and converts to
+    Pandas DataFrame for use in EDA and ML phases.
+    
+    Returns:
+        pd.DataFrame: DataFrame with columns — job_id, title, 
+                      company, city, salary, date_scraped.
+        None: If database query fails.
+    """
     session = Session()
     try:
         jobs = session.query(Job).all()

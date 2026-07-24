@@ -1,18 +1,55 @@
+"""
+indeed_scraper.py
+=================
+Web scraper for Indeed Pakistan job listings.
+Uses Selenium with undetected-chromedriver to bypass bot detection
+and BeautifulSoup to parse and extract job data from loaded pages.
+
+Scraped Fields:
+    - Job Title
+    - Company Name
+    - City / Location
+    - Salary (where available)
+
+Usage:
+    python scraper/indeed_scraper.py
+
+Author: Husnain Maroof
+GitHub: https://github.com/husnainalix77
+"""
 import pandas as pd
 from bs4 import BeautifulSoup
 import undetected_chromedriver as uc
 import time
 
-def setup_driver():
-    """Configures and launches an undetected Chrome browser instance"""
+def setup_driver() -> object:
+    """
+    Configure and launch an undetected Chrome browser instance.
+    
+    Uses undetected-chromedriver to bypass bot detection systems
+    that would block standard Selenium WebDriver.
+    
+    Returns:
+        driver (uc.Chrome): Configured Chrome WebDriver instance
+    """
     options = uc.ChromeOptions()
     options.add_argument("--start-maximized")
     driver = uc.Chrome(options=options, version_main=150)
     driver.set_page_load_timeout(60)
     return driver
 
-def scrape_jobs(driver, url):
-    """Navigates to the URL and waits for page to load"""
+def scrape_jobs(driver: object, url: str) -> list:
+    """
+    Navigate to a URL and extract job listings from the page.
+    
+    Args:
+        driver (uc.Chrome): Active Chrome WebDriver instance
+        url (str): Indeed Pakistan search URL to scrape
+        
+    Returns:
+        list: List of dictionaries, each containing one job's data.
+              Returns empty list if page fails to load.
+    """
     try:
         driver.get(url)
         time.sleep(5)
@@ -39,8 +76,18 @@ def scrape_jobs(driver, url):
         print(f"Error scraping {url}: {e}")
         return []
 
-def get_urls(query, city, num_pages):
-    """Gets the urls for a specific job for every page"""
+def get_urls(query: str, city: str, num_pages: int) -> list:
+    """
+    Generate paginated Indeed Pakistan search URLs.
+    
+    Args:
+        query (str): Job search term e.g. 'software engineer'
+        city (str): Target city e.g. 'lahore'
+        num_pages (int): Number of pages to scrape (each page has ~15 jobs)
+        
+    Returns:
+        list: List of URLs for all pages of the search results
+    """
     urls = []
     query = query.replace(" ", "+")
     for page in range(0, num_pages * 10, 10):
@@ -48,8 +95,17 @@ def get_urls(query, city, num_pages):
         urls.append(url)
     return urls
 
-def run_full_scrape():
-    """Scraps the full details for a query"""
+def run_full_scrape() -> None:
+    """
+    Execute complete scraping pipeline across all queries and cities.
+    
+    Scrapes multiple job categories across Lahore, Karachi, and Islamabad.
+    Saves results to data/jobs_raw.csv with deduplication handled
+    in the database layer.
+    
+    Returns:
+        None — saves results directly to CSV file
+    """
     driver = setup_driver()
     queries = [
     "software engineer", "data analyst", "mechanical engineer",
@@ -59,7 +115,7 @@ def run_full_scrape():
     "project manager", "business analyst", "network engineer",
     "web developer", "content writer", "customer service",
     "supply chain"
-]
+        ]
     cities = ["lahore", "karachi", "islamabad"]
     all_jobs = []
     
