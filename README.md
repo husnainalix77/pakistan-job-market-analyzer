@@ -54,7 +54,7 @@ Indeed Pakistan
          │
          ▼
 ┌─────────────────┐
-│  XGBoost Model  │  ← Salary Prediction + Job Classification
+│  ML Classifier  │  ← Job Category Prediction
 └────────┬────────┘
          │
          ▼
@@ -74,7 +74,7 @@ Indeed Pakistan
 | Database | MySQL + SQLAlchemy ORM | Structured storage with ORM |
 | Processing | Pandas + NumPy | Cleaning & transformation |
 | Visualization | Matplotlib + Seaborn | EDA plots |
-| ML | Scikit-learn + XGBoost | Prediction models |
+| ML | Scikit-learn + XGBoost | Job category classification |
 | Deployment | Streamlit | Interactive dashboard |
 | Automation | schedule library | Weekly auto-scraping |
 
@@ -88,33 +88,31 @@ Indeed Pakistan
 | 2 | Web Scraping — Indeed Pakistan | ✅ Complete |
 | 3 | Database Storage with SQLAlchemy | ✅ Complete |
 | 4 | Data Cleaning & EDA | ✅ Complete |
-| 5 | Feature Engineering | ⏳ Upcoming |
-| 6 | ML Modeling (Regression + Classification) | ⏳ Upcoming |
+| 5 | Feature Engineering | ✅ Complete |
+| 6 | ML Modeling — Job Category Classifier | ⏳ Upcoming |
 | 7 | Streamlit Interactive Dashboard | ⏳ Upcoming |
-| 8 | Portfolio Polish & Deployment | ⏳ Upcoming |
+| 8 | Deployment & Portfolio Polish | ⏳ Upcoming |
 
 ---
 
-## 📊 Phase 2 Results — Web Scraping
+## 📊 Phase 2 — Web Scraping
 
-- ✅ Built automated scraper using Selenium + undetected-chromedriver
-- ✅ Bypassed Cloudflare bot detection — switched to Indeed Pakistan
-- ✅ Implemented pagination — scrapes 10 pages per search query
-- ✅ Scraped **5 job categories × 3 cities × 10 pages = 1,566 raw listings**
-- ✅ Weekly scheduler configured for automated scraping every Sunday
+- ✅ Selenium + undetected-chromedriver bypasses bot detection
+- ✅ Pagination — 10 pages per search query
+- ✅ **1,566 raw listings** scraped across 5 categories × 3 cities
+- ✅ Weekly scheduler configured for automated re-scraping
 
-**Categories scraped:** Software Engineer, Data Analyst, Mechanical Engineer, Accountant, Electrical Engineer
-
-**Cities covered:** Lahore, Karachi, Islamabad
+**Categories:** Software Engineer, Data Analyst, Mechanical Engineer, Accountant, Electrical Engineer
+**Cities:** Lahore, Karachi, Islamabad
 
 ---
 
-## 🗄️ Phase 3 Results — Database Storage
+## 🗄️ Phase 3 — Database Storage
 
-- ✅ SQLAlchemy ORM models for `jobs` and `skills` tables
-- ✅ Secure MySQL connection via `.env` — password never in code
-- ✅ Duplicate detection — skips existing records on re-run
-- ✅ **620 unique jobs stored in MySQL**
+- ✅ SQLAlchemy ORM models for normalized MySQL schema
+- ✅ Credentials secured via `.env` — never in code
+- ✅ Duplicate detection on every insert
+- ✅ **620 unique jobs in MySQL**
 
 ```
 Run 1: Inserted: 620 | Skipped: 0
@@ -123,25 +121,41 @@ Run 2: Inserted: 0   | Skipped: 620  ← duplicate detection working
 
 ---
 
-## 🔍 Phase 4 Results — Data Cleaning & EDA
+## 🔍 Phase 4 — Data Cleaning & EDA
 
-- ✅ Standardized 24 city name variations into 5 clean categories
-- ✅ Extracted job categories using rule-based keyword matching (98.5% accuracy)
-- ✅ 5 professional visualizations with data-driven insights
-- ✅ Cleaned dataset saved to `data/cleaned_data.csv`
+- ✅ 24 city variations → 5 clean categories
+- ✅ Rule-based category extraction — 98.5% accuracy (609/620 classified)
+- ✅ 5 professional visualizations
 
-### Key Findings from EDA
+### Key EDA Findings
 
 | # | Finding | Insight |
 |---|---|---|
-| 1 | Software Engineering = 61% of all jobs | Pakistan's job market is overwhelmingly tech-focused |
-| 2 | Karachi (236) ≈ Lahore (231) | Both are equally strong tech hubs — 75% of all listings |
-| 3 | 100% of listings hide salary | Makes our salary predictor genuinely valuable |
-| 4 | Contour Software has 24 listings | Most active employer — 50% ahead of second place |
-| 5 | SQA Engineer is 3rd most common title | Quality assurance is highly demanded in Pakistan |
+| 1 | Software Engineering = 61% of jobs | Pakistan's market is tech-dominated |
+| 2 | Karachi (236) ≈ Lahore (231) | Both equally strong — 75% of all listings |
+| 3 | 100% salary hidden | Our predictor fills this gap |
+| 4 | Contour Software — 24 listings | Most active employer |
+| 5 | SQA Engineer = 3rd most common title | QA is highly demanded |
 
 ---
 
+## ⚙️ Phase 5 — Feature Engineering
+
+- ✅ Extracted seniority level from job titles (0=Junior, 1=Mid, 2=Senior, 3=Lead)
+- ✅ Label encoded city → integers (Islamabad=0, Karachi=1, Lahore=2, Other=3, Rawalpindi=4)
+- ✅ Label encoded category → integers (7 categories, 0-6)
+- ✅ Feature matrix X (620×2) and target vector y (620,) created
+- ✅ Encoders saved — `le_city.pkl` and `le_category.pkl`
+
+**Seniority Distribution:**
+```
+Mid-level:  387 (62%)
+Senior:     129 (21%)
+Junior:      83 (13%)
+Lead:        21  (3%)
+```
+
+---
 
 ## 🗄️ Database Schema
 
@@ -203,7 +217,7 @@ python scraper/indeed_scraper.py
 # 7. Insert data into MySQL
 python -m database.db_manager
 
-# 8. Run EDA notebook
+# 8. Run EDA + Feature Engineering notebook
 jupyter notebook notebooks/01_EDA.ipynb
 
 # 9. Launch dashboard (Phase 7)
@@ -228,11 +242,12 @@ pakistan-job-market-analyzer/
 │   └── schema.sql           # Raw SQL schema reference
 │
 ├── notebooks/
-│   └── 01_EDA.ipynb         # Data cleaning & EDA — 5 visualizations
+│   └── 01_EDA.ipynb         # Data cleaning, EDA & feature engineering
 │
 ├── models/
-│   ├── salary_model.pkl     # Trained salary predictor
-│   └── category_model.pkl   # Trained job classifier
+│   ├── le_city.pkl          # City label encoder
+│   ├── le_category.pkl      # Category label encoder
+│   └── category_model.pkl   # Trained classifier (Phase 6)
 │
 ├── app/
 │   └── app.py               # Streamlit dashboard (4 tabs)
@@ -248,22 +263,27 @@ pakistan-job-market-analyzer/
 ## 🧠 Key Engineering Decisions
 
 **Why undetected-chromedriver?**
-Indeed Pakistan loads content via JavaScript. undetected-chromedriver
-bypasses bot detection that blocks standard Selenium.
+Indeed Pakistan loads content via JavaScript. Bypasses bot detection
+that blocks standard Selenium.
 
 **Why SQLAlchemy ORM?**
-ORM lets us work with Python objects instead of SQL strings. Portable —
-anyone can recreate the database by running models.py.
+Portable — anyone recreates the database by running models.py.
+No manual Workbench setup needed.
 
 **Why .env for credentials?**
-Passwords never appear in code. Industry standard for all projects.
+Industry standard — passwords never appear in code or GitHub.
 
 **Why rule-based category extraction?**
-Keyword matching on job titles achieves 98.5% accuracy without
-needing training data — fast, interpretable, and maintainable.
+98.5% accuracy without training data — fast and interpretable.
 
-**Why normalize skills into a separate table?**
-Enables efficient querying — "how many jobs require Python?" in one SQL statement.
+**Why Label Encoding over One Hot Encoding?**
+We use tree-based models (Random Forest, XGBoost) which handle
+label encoded integers natively. One Hot would add unnecessary columns.
+
+**Why save encoders separately from model?**
+Dashboard needs encoders to convert user input → model input,
+and model output → readable category name. Keeping them separate
+makes the pipeline modular and maintainable.
 
 ---
 
