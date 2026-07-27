@@ -76,7 +76,7 @@ with st.sidebar:
     st.metric("Cities Covered", df["city"].nunique())
     st.metric("Job Categories", df["category"].nunique())
     st.markdown("---")
-    st.markdown("**Built by:** Husnain Maroof")
+    st.markdown("**Author:** Husnain Maroof")
     st.markdown("**GitHub:** [husnainalix77](https://github.com/husnainalix77)")
     st.markdown("---")
     st.caption("Data sourced from Indeed Pakistan")
@@ -215,5 +215,98 @@ with tab2:
             
             st.metric("Model Confidence", f"{probability*100:.1f}%")
     
-
+# Tab 3 — Skill Explorer
+with tab3:
+    st.header("🔍 Skill Explorer")
+    st.markdown("Search any skill to see which cities and companies demand it most.")
+    st.markdown("---")
     
+    skill = st.text_input(
+        label="Enter a Skill",
+        placeholder="e.g. Python, SQL, AutoCAD, React..."
+    )
+    
+    if skill:
+        # Filter jobs containing this skill in title
+        filtered = df[df["title"].str.contains(skill, case=False, na=False)]
+        
+        if len(filtered) == 0:
+            st.error(f"❌ No jobs found mentioning '{skill}'")
+        else:
+            st.success(f"✅ Found **{len(filtered)}** jobs mentioning '{skill}'")
+            
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                st.subheader("📍 Demand by City")
+                city_demand = filtered["city"].value_counts()
+                fig, ax = plt.subplots(figsize=(6, 4))
+                ax.barh(city_demand.index, city_demand.values, 
+                        color=sns.color_palette("husl", len(city_demand)))
+                ax.set_xlabel("Number of Jobs")
+                plt.tight_layout()
+                st.pyplot(fig)
+            
+            with col2:
+                st.subheader("🏢 Top Companies Hiring")
+                company_demand = filtered["company"].value_counts().head(5)
+                fig, ax = plt.subplots(figsize=(6, 4))
+                ax.barh(company_demand.index, company_demand.values,
+                        color=sns.color_palette("Set2", len(company_demand)))
+                ax.set_xlabel("Number of Jobs")
+                plt.tight_layout()
+                st.pyplot(fig)
+            
+            st.subheader("📋 Matching Job Listings")
+            st.dataframe(
+                filtered[["title", "company", "city", "category"]].reset_index(drop=True),
+                use_container_width=True
+            )    
+
+# Tab 4 — Job Trends
+with tab4:
+    st.header("📈 Job Trends")
+    st.markdown("Filter job listings by city and category to explore the market.")
+    st.markdown("---")
+    
+    # Filters
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        selected_city = st.selectbox(
+            "Filter by City",
+            options=["All"] + list(df["city"].unique())
+        )
+    
+    with col2:
+        selected_category = st.selectbox(
+            "Filter by Category",
+            options=["All"] + list(df["category"].unique())
+        )
+    
+    # Apply filters
+    filtered_df = df.copy()
+    
+    if selected_city != "All":
+        filtered_df = filtered_df[filtered_df["city"] == selected_city]
+    
+    if selected_category != "All":
+        filtered_df = filtered_df[filtered_df["category"] == selected_category]
+    
+    # Summary metrics
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.metric("Jobs Found", len(filtered_df))
+    with col2:
+        st.metric("Companies", filtered_df["company"].nunique())
+    with col3:
+        st.metric("Cities", filtered_df["city"].nunique())
+    
+    st.markdown("---")
+    
+    # Results table
+    st.subheader(f"📋 Job Listings ({len(filtered_df)} results)")
+    st.dataframe(
+        filtered_df[["title", "company", "city", "category"]].reset_index(drop=True),
+        use_container_width=True
+    )            
