@@ -54,7 +54,7 @@ Indeed Pakistan
          │
          ▼
 ┌─────────────────┐
-│  ML Classifier  │  ← Job Category Prediction
+│  ML Classifier  │  ← Logistic Regression, 89.52% accuracy
 └────────┬────────┘
          │
          ▼
@@ -71,8 +71,9 @@ Indeed Pakistan
 |---|---|---|
 | Scraping | Selenium + undetected-chromedriver | Bot detection bypass |
 | Parsing | BeautifulSoup4 | HTML extraction |
-| Database | MySQL + SQLAlchemy ORM | Structured storage with ORM |
+| Database | MySQL + SQLAlchemy ORM | Structured storage |
 | Processing | Pandas + NumPy | Cleaning & transformation |
+| NLP | TF-IDF Vectorizer | Job title feature extraction |
 | Visualization | Matplotlib + Seaborn | EDA plots |
 | ML | Scikit-learn + XGBoost | Job category classification |
 | Deployment | Streamlit | Interactive dashboard |
@@ -89,8 +90,8 @@ Indeed Pakistan
 | 3 | Database Storage with SQLAlchemy | ✅ Complete |
 | 4 | Data Cleaning & EDA | ✅ Complete |
 | 5 | Feature Engineering | ✅ Complete |
-| 6 | ML Modeling — Job Category Classifier | ⏳ Upcoming |
-| 7 | Streamlit Interactive Dashboard | ⏳ Upcoming |
+| 6 | ML Modeling — Job Category Classifier | ✅ Complete |
+| 7 | Streamlit Interactive Dashboard | ⏳ In Progress |
 | 8 | Deployment & Portfolio Polish | ⏳ Upcoming |
 
 ---
@@ -100,7 +101,7 @@ Indeed Pakistan
 - ✅ Selenium + undetected-chromedriver bypasses bot detection
 - ✅ Pagination — 10 pages per search query
 - ✅ **1,566 raw listings** scraped across 5 categories × 3 cities
-- ✅ Weekly scheduler configured for automated re-scraping
+- ✅ Weekly scheduler configured
 
 **Categories:** Software Engineer, Data Analyst, Mechanical Engineer, Accountant, Electrical Engineer
 **Cities:** Lahore, Karachi, Islamabad
@@ -110,21 +111,16 @@ Indeed Pakistan
 ## 🗄️ Phase 3 — Database Storage
 
 - ✅ SQLAlchemy ORM models for normalized MySQL schema
-- ✅ Credentials secured via `.env` — never in code
+- ✅ Credentials secured via `.env`
 - ✅ Duplicate detection on every insert
 - ✅ **620 unique jobs in MySQL**
-
-```
-Run 1: Inserted: 620 | Skipped: 0
-Run 2: Inserted: 0   | Skipped: 620  ← duplicate detection working
-```
 
 ---
 
 ## 🔍 Phase 4 — Data Cleaning & EDA
 
 - ✅ 24 city variations → 5 clean categories
-- ✅ Rule-based category extraction — 98.5% accuracy (609/620 classified)
+- ✅ Rule-based category extraction — 98.5% accuracy
 - ✅ 5 professional visualizations
 
 ### Key EDA Findings
@@ -141,18 +137,40 @@ Run 2: Inserted: 0   | Skipped: 620  ← duplicate detection working
 
 ## ⚙️ Phase 5 — Feature Engineering
 
-- ✅ Extracted seniority level from job titles (0=Junior, 1=Mid, 2=Senior, 3=Lead)
-- ✅ Label encoded city → integers (Islamabad=0, Karachi=1, Lahore=2, Other=3, Rawalpindi=4)
-- ✅ Label encoded category → integers (7 categories, 0-6)
-- ✅ Feature matrix X (620×2) and target vector y (620,) created
-- ✅ Encoders saved — `le_city.pkl` and `le_category.pkl`
+- ✅ Seniority extracted from titles (0=Junior, 1=Mid, 2=Senior, 3=Lead)
+- ✅ Label encoded city and category
+- ✅ TF-IDF vectorizer on job titles (50 features)
+- ✅ Final feature matrix: 620 × 52
+- ✅ Encoders saved — `le_city.pkl`, `le_category.pkl`
 
-**Seniority Distribution:**
+---
+
+## 🤖 Phase 6 — ML Modeling
+
+### Model Comparison
+
+| Model | Accuracy |
+|---|---|
+| **Logistic Regression** | **89.52%** ← Winner |
+| Random Forest | 87.10% |
+| XGBoost | 87.10% |
+| Baseline (majority class) | 61.29% |
+
+### Key Results
+- ✅ All 3 models significantly outperform 61.29% baseline
+- ✅ Logistic Regression wins — TF-IDF creates linearly separable features
+- ✅ Data Science & AI — 100% F1 score
+- ✅ Software Engineering — 99% recall
+- ✅ Finance & Accounting — 93% F1 score
+- ✅ Models saved — `category_model.pkl`, `tfidf_vectorizer.pkl`
+
+### Saved Model Artifacts
 ```
-Mid-level:  387 (62%)
-Senior:     129 (21%)
-Junior:      83 (13%)
-Lead:        21  (3%)
+models/
+├── category_model.pkl      # Logistic Regression classifier
+├── tfidf_vectorizer.pkl    # TF-IDF vectorizer (50 features)
+├── le_city.pkl             # City label encoder
+└── le_category.pkl         # Category label encoder
 ```
 
 ---
@@ -217,10 +235,10 @@ python scraper/indeed_scraper.py
 # 7. Insert data into MySQL
 python -m database.db_manager
 
-# 8. Run EDA + Feature Engineering notebook
-jupyter notebook notebooks/01_EDA.ipynb
+# 8. Run notebooks
+jupyter notebook notebooks/
 
-# 9. Launch dashboard (Phase 7)
+# 9. Launch dashboard
 streamlit run app/app.py
 ```
 
@@ -234,7 +252,7 @@ pakistan-job-market-analyzer/
 ├── scraper/
 │   ├── indeed_scraper.py    # Selenium + BS4 scraping logic
 │   ├── scheduler.py         # Automated weekly scraping
-│   └── utils.py             # Helper functions
+│   └── utils.py             # Shared utility functions
 │
 ├── database/
 │   ├── models.py            # SQLAlchemy ORM table definitions
@@ -242,15 +260,17 @@ pakistan-job-market-analyzer/
 │   └── schema.sql           # Raw SQL schema reference
 │
 ├── notebooks/
-│   └── 01_EDA.ipynb         # Data cleaning, EDA & feature engineering
+│   ├── 01_EDA_and_feature_engineering.ipynb
+│   └── 02_modeling.ipynb
 │
 ├── models/
+│   ├── category_model.pkl   # Trained Logistic Regression
+│   ├── tfidf_vectorizer.pkl # TF-IDF vectorizer
 │   ├── le_city.pkl          # City label encoder
-│   ├── le_category.pkl      # Category label encoder
-│   └── category_model.pkl   # Trained classifier (Phase 6)
+│   └── le_category.pkl      # Category label encoder
 │
 ├── app/
-│   └── app.py               # Streamlit dashboard (4 tabs)
+│   └── app.py               # Streamlit dashboard
 │
 ├── .env                     # MySQL credentials (not in repo)
 ├── .gitignore
@@ -262,28 +282,20 @@ pakistan-job-market-analyzer/
 
 ## 🧠 Key Engineering Decisions
 
-**Why undetected-chromedriver?**
-Indeed Pakistan loads content via JavaScript. Bypasses bot detection
-that blocks standard Selenium.
+**Why TF-IDF over raw features?**
+City + seniority alone gave 61% accuracy (same as baseline).
+Adding TF-IDF on job titles jumped to 89.52% — title keywords
+are the strongest predictor of job category.
 
-**Why SQLAlchemy ORM?**
-Portable — anyone recreates the database by running models.py.
-No manual Workbench setup needed.
+**Why Logistic Regression over XGBoost?**
+TF-IDF creates sparse, high-dimensional, linearly separable features.
+Linear models like Logistic Regression handle this better than
+tree-based models. XGBoost and Random Forest both scored 87.10%.
 
-**Why .env for credentials?**
-Industry standard — passwords never appear in code or GitHub.
-
-**Why rule-based category extraction?**
-98.5% accuracy without training data — fast and interpretable.
-
-**Why Label Encoding over One Hot Encoding?**
-We use tree-based models (Random Forest, XGBoost) which handle
-label encoded integers natively. One Hot would add unnecessary columns.
-
-**Why save encoders separately from model?**
-Dashboard needs encoders to convert user input → model input,
-and model output → readable category name. Keeping them separate
-makes the pipeline modular and maintainable.
+**Why save 4 separate artifacts?**
+Dashboard needs all 4 to function — model predicts, TF-IDF transforms
+title input, le_city encodes city, le_category decodes prediction back
+to readable category name.
 
 ---
 
