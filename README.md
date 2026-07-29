@@ -74,9 +74,9 @@ Indeed Pakistan
 | Database | MySQL + SQLAlchemy ORM | Structured storage |
 | Processing | Pandas + NumPy | Cleaning & transformation |
 | NLP | TF-IDF Vectorizer | Job title feature extraction |
-| Visualization | Matplotlib + Seaborn | EDA plots |
+| Visualization | Matplotlib + Seaborn | EDA plots and dashboard |
 | ML | Scikit-learn + XGBoost | Job category classification |
-| Deployment | Streamlit | Interactive dashboard |
+| Dashboard | Streamlit | Interactive 4-tab web application |
 | Automation | schedule library | Weekly auto-scraping |
 
 ---
@@ -91,7 +91,7 @@ Indeed Pakistan
 | 4 | Data Cleaning & EDA | ✅ Complete |
 | 5 | Feature Engineering | ✅ Complete |
 | 6 | ML Modeling — Job Category Classifier | ✅ Complete |
-| 7 | Streamlit Interactive Dashboard | ⏳ In Progress |
+| 7 | Streamlit Interactive Dashboard | ✅ Complete |
 | 8 | Deployment & Portfolio Polish | ⏳ Upcoming |
 
 ---
@@ -114,6 +114,11 @@ Indeed Pakistan
 - ✅ Credentials secured via `.env`
 - ✅ Duplicate detection on every insert
 - ✅ **620 unique jobs in MySQL**
+
+```
+Run 1: Inserted: 620 | Skipped: 0
+Run 2: Inserted: 0   | Skipped: 620  ← duplicate detection working
+```
 
 ---
 
@@ -157,21 +162,35 @@ Indeed Pakistan
 | Baseline (majority class) | 61.29% |
 
 ### Key Results
-- ✅ All 3 models significantly outperform 61.29% baseline
-- ✅ Logistic Regression wins — TF-IDF creates linearly separable features
+- ✅ TF-IDF title features — 28% accuracy jump over baseline
 - ✅ Data Science & AI — 100% F1 score
 - ✅ Software Engineering — 99% recall
 - ✅ Finance & Accounting — 93% F1 score
 - ✅ Models saved — `category_model.pkl`, `tfidf_vectorizer.pkl`
 
-### Saved Model Artifacts
-```
-models/
-├── category_model.pkl      # Logistic Regression classifier
-├── tfidf_vectorizer.pkl    # TF-IDF vectorizer (50 features)
-├── le_city.pkl             # City label encoder
-└── le_category.pkl         # Category label encoder
-```
+---
+
+## 🖥️ Phase 7 — Streamlit Dashboard
+
+### 4 Interactive Tabs
+
+| Tab | Description |
+|---|---|
+| 📊 Market Dashboard | Key metrics + 3 professional charts |
+| 🤖 Job Category Predictor | ML prediction with confidence score |
+| 🔍 Skill Explorer | Search any skill — see city and company demand |
+| 📈 Job Trends | Filter listings by city and category |
+
+### Dashboard Features
+- ✅ Professional sidebar with dataset metrics
+- ✅ 3 KPI metric cards on Market Dashboard
+- ✅ Geographic distribution chart
+- ✅ Top 10 employers chart
+- ✅ Job category distribution chart
+- ✅ ML prediction with confidence score and color coded result
+- ✅ Skill search with city and company breakdown
+- ✅ Dynamic filtering with real-time metric updates
+- ✅ Interactive job listings table
 
 ---
 
@@ -270,7 +289,10 @@ pakistan-job-market-analyzer/
 │   └── le_category.pkl      # Category label encoder
 │
 ├── app/
-│   └── app.py               # Streamlit dashboard
+│   └── app.py               # Streamlit 4-tab dashboard
+│
+├── data/
+│   └── cleaned_data.csv     # Cleaned dataset for deployment
 │
 ├── .env                     # MySQL credentials (not in repo)
 ├── .gitignore
@@ -284,18 +306,20 @@ pakistan-job-market-analyzer/
 
 **Why TF-IDF over raw features?**
 City + seniority alone gave 61% accuracy (same as baseline).
-Adding TF-IDF on job titles jumped to 89.52% — title keywords
-are the strongest predictor of job category.
+TF-IDF on job titles jumped to 89.52% — title keywords are the
+strongest predictor of job category.
 
 **Why Logistic Regression over XGBoost?**
-TF-IDF creates sparse, high-dimensional, linearly separable features.
-Linear models like Logistic Regression handle this better than
-tree-based models. XGBoost and Random Forest both scored 87.10%.
+TF-IDF creates sparse, linearly separable features. Linear models
+handle this better than tree-based models.
 
-**Why save 4 separate artifacts?**
-Dashboard needs all 4 to function — model predicts, TF-IDF transforms
-title input, le_city encodes city, le_category decodes prediction back
-to readable category name.
+**Why save 4 separate model artifacts?**
+Dashboard needs all 4 — model predicts, TF-IDF transforms title,
+le_city encodes city, le_category decodes prediction to readable name.
+
+**Why show confidence score?**
+Honest ML practice — hiding uncertainty misleads users. Low confidence
+triggers yellow warning so users know to verify the prediction.
 
 ---
 
