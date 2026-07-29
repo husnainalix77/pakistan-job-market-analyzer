@@ -12,9 +12,17 @@
 [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Latest-red?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
 [![XGBoost](https://img.shields.io/badge/XGBoost-Latest-blue?style=for-the-badge)](https://xgboost.readthedocs.io)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Latest-red?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
-[![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen?style=for-the-badge)]()
+[![Status](https://img.shields.io/badge/Status-Live-brightgreen?style=for-the-badge)]()
 
 </div>
+
+---
+
+## 🚀 Live Demo
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://pakistan-job-market-analyzer.streamlit.app/)
+
+**👆 Click to open the live app — no installation required**
 
 ---
 
@@ -59,7 +67,7 @@ Indeed Pakistan
          │
          ▼
 ┌─────────────────┐
-│Streamlit Dashboard← Interactive 4-tab web application
+│Streamlit Dashboard← Deployed on Streamlit Cloud
 └─────────────────┘
 ```
 
@@ -77,6 +85,7 @@ Indeed Pakistan
 | Visualization | Matplotlib + Seaborn | EDA plots and dashboard |
 | ML | Scikit-learn + XGBoost | Job category classification |
 | Dashboard | Streamlit | Interactive 4-tab web application |
+| Deployment | Streamlit Cloud | Free public deployment |
 | Automation | schedule library | Weekly auto-scraping |
 
 ---
@@ -92,7 +101,7 @@ Indeed Pakistan
 | 5 | Feature Engineering | ✅ Complete |
 | 6 | ML Modeling — Job Category Classifier | ✅ Complete |
 | 7 | Streamlit Interactive Dashboard | ✅ Complete |
-| 8 | Deployment & Portfolio Polish | ⏳ Upcoming |
+| 8 | Deployment & Portfolio Polish | ✅ Complete |
 
 ---
 
@@ -101,7 +110,7 @@ Indeed Pakistan
 - ✅ Selenium + undetected-chromedriver bypasses bot detection
 - ✅ Pagination — 10 pages per search query
 - ✅ **1,566 raw listings** scraped across 5 categories × 3 cities
-- ✅ Weekly scheduler configured
+- ✅ Weekly scheduler configured for automated re-scraping
 
 **Categories:** Software Engineer, Data Analyst, Mechanical Engineer, Accountant, Electrical Engineer
 **Cities:** Lahore, Karachi, Islamabad
@@ -111,7 +120,7 @@ Indeed Pakistan
 ## 🗄️ Phase 3 — Database Storage
 
 - ✅ SQLAlchemy ORM models for normalized MySQL schema
-- ✅ Credentials secured via `.env`
+- ✅ Credentials secured via `.env` — never in code
 - ✅ Duplicate detection on every insert
 - ✅ **620 unique jobs in MySQL**
 
@@ -170,7 +179,7 @@ Run 2: Inserted: 0   | Skipped: 620  ← duplicate detection working
 
 ---
 
-## 🖥️ Phase 7 — Streamlit Dashboard
+## 🖥️ Phase 7 & 8 — Dashboard & Deployment
 
 ### 4 Interactive Tabs
 
@@ -181,16 +190,10 @@ Run 2: Inserted: 0   | Skipped: 620  ← duplicate detection working
 | 🔍 Skill Explorer | Search any skill — see city and company demand |
 | 📈 Job Trends | Filter listings by city and category |
 
-### Dashboard Features
-- ✅ Professional sidebar with dataset metrics
-- ✅ 3 KPI metric cards on Market Dashboard
-- ✅ Geographic distribution chart
-- ✅ Top 10 employers chart
-- ✅ Job category distribution chart
-- ✅ ML prediction with confidence score and color coded result
-- ✅ Skill search with city and company breakdown
-- ✅ Dynamic filtering with real-time metric updates
-- ✅ Interactive job listings table
+### Deployment
+- ✅ Deployed on **Streamlit Cloud** — free, public, always available
+- ✅ Live URL: https://pakistan-job-market-analyzer.streamlit.app/
+- ✅ No installation required — works in any browser
 
 ---
 
@@ -220,7 +223,7 @@ CREATE TABLE skills (
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Run Locally
 
 ### Prerequisites
 - Python 3.10+
@@ -292,7 +295,7 @@ pakistan-job-market-analyzer/
 │   └── app.py               # Streamlit 4-tab dashboard
 │
 ├── data/
-│   └── cleaned_data.csv     # Cleaned dataset for deployment
+│   └── cleaned_data.csv     # Cleaned dataset
 │
 ├── .env                     # MySQL credentials (not in repo)
 ├── .gitignore
@@ -311,7 +314,8 @@ strongest predictor of job category.
 
 **Why Logistic Regression over XGBoost?**
 TF-IDF creates sparse, linearly separable features. Linear models
-handle this better than tree-based models.
+handle this better than tree-based models. Both XGBoost and Random
+Forest scored 87.10%.
 
 **Why save 4 separate model artifacts?**
 Dashboard needs all 4 — model predicts, TF-IDF transforms title,
@@ -320,6 +324,10 @@ le_city encodes city, le_category decodes prediction to readable name.
 **Why show confidence score?**
 Honest ML practice — hiding uncertainty misleads users. Low confidence
 triggers yellow warning so users know to verify the prediction.
+
+**Why CSV for deployment instead of MySQL?**
+Streamlit Cloud cannot connect to local MySQL. CSV provides same data
+for dashboard while MySQL is used for local development pipeline.
 
 ---
 
@@ -345,6 +353,6 @@ University of Engineering & Technology (UET), Lahore
 
 ⭐ **Star this repo to follow the build progress** ⭐
 
-*Actively committing — check the commit history*
+**🚀 [Try the Live App](https://pakistan-job-market-analyzer.streamlit.app/)**
 
 </div>
