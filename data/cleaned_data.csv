@@ -1,0 +1,621 @@
+job_id,title,company,city,salary,date_scraped,category
+1,Software Engineer Level II,Softpers Interactive,Lahore,,2026-07-24 15:38:06,Software Engineering
+2,Associate Software Engineer,Dubizzle Labs,Lahore,,2026-07-24 15:38:06,Software Engineering
+3,Software Engineer (Entry-level),Educative,Lahore,,2026-07-24 15:38:06,Software Engineering
+4,Associate Software Engineer,Softpers Interactive,Lahore,,2026-07-24 15:38:06,Software Engineering
+5,Software Engineer,The Tech Inc.,Lahore,,2026-07-24 15:38:06,Software Engineering
+6,Associate Software Engineer,CureMD Healthcare,Lahore,,2026-07-24 15:38:06,Software Engineering
+7,Junior Software Engineer,QBXNet,Lahore,,2026-07-24 15:38:06,Software Engineering
+8,Software Engineer,QBXNet,Lahore,,2026-07-24 15:38:06,Software Engineering
+9,Software Engineer,Caramel Tech Studios,Lahore,,2026-07-24 15:38:06,Software Engineering
+10,Associate Software Engineer,Careaxiom,Lahore,,2026-07-24 15:38:06,Software Engineering
+11,Internship - Software Engineering,"Howmuch, Foodnerd",Lahore,,2026-07-24 15:38:06,Software Engineering
+12,Backend Developer,HRHive,Lahore,,2026-07-24 15:38:06,Software Engineering
+13,Senior Software Engineer,Secure Tech Consultancy Pvt. Ltd,Lahore,,2026-07-24 15:38:06,Software Engineering
+14,Software Engineer,CureMD Healthcare,Lahore,,2026-07-24 15:38:06,Software Engineering
+15,Back End Software Engineer,Paismo,Lahore,,2026-07-24 15:38:06,Software Engineering
+16,Software Developer,AutoScale Ventures,Lahore,,2026-07-24 15:38:06,Software Engineering
+17,Internship - Software Test Engineer,"Howmuch, Foodnerd",Lahore,,2026-07-24 15:38:06,Software Engineering
+18,Software Developer,Interwood Mobel,Lahore,,2026-07-24 15:38:06,Software Engineering
+19,Associate Software Developer (Full Stack),Biafo Tech,Lahore,,2026-07-24 15:38:06,Software Engineering
+20,Frontend Developer,Hrhive,Lahore,,2026-07-24 15:38:06,Software Engineering
+21,Software Engineer - PHP Laravel,Sukuk Capital,Lahore,,2026-07-24 15:38:06,Software Engineering
+22,MERN Stack Developer,BearPlex,Lahore,,2026-07-24 15:38:06,Software Engineering
+23,Software Engineer,Secure Tech Consultancy Pvt. Ltd,Lahore,,2026-07-24 15:38:06,Software Engineering
+24,Software Engineer (Experienced),Educative,Lahore,,2026-07-24 15:38:06,Software Engineering
+25,Software Engineer – Node.js,Web Sketchers,Lahore,,2026-07-24 15:38:06,Software Engineering
+26,Software Quality Assurance Engineer,Arrivy Inc.,Lahore,,2026-07-24 15:38:06,Software Engineering
+27,Software Developer (.NET / ASP.NET MVC),Tech Bridge Consultancy,Lahore,,2026-07-24 15:38:06,Software Engineering
+28,Software Quality Assurance - Engineer,Interwood Mobel,Lahore,,2026-07-24 15:38:06,Software Engineering
+29,Senior Software Engineer,Caramel Tech Studios,Lahore,,2026-07-24 15:38:06,Software Engineering
+30,Software Support Engineer (Contract-Based),ORBIN,Lahore,,2026-07-24 15:38:06,Software Engineering
+31,Software Quality Assurance Engineer,Careaxiom,Lahore,,2026-07-24 15:38:06,Software Engineering
+32,Software Engineers,eWorx International,Lahore,,2026-07-24 15:38:06,Software Engineering
+33,Python AI Engineer (Backend & Agentic AI),Devfum,Lahore,,2026-07-24 15:38:06,Software Engineering
+34,Trainee Software Developer,Contour Software,Lahore,,2026-07-24 15:38:06,Software Engineering
+35,Full Stack Developer with AI Integration,HRHive,Lahore,,2026-07-24 15:38:06,Software Engineering
+36,Junior Software Developer (VB6 / .NET & SQL Server),Star Laboratories (Pvt.) Ltd.,Lahore,,2026-07-24 15:38:06,Software Engineering
+37,Front End Developer,IRG Global,Lahore,,2026-07-24 15:38:06,Software Engineering
+38,Senior Software Engineer - Full Stack (Backend focused),AmentoTech Pvt Ltd,Lahore,,2026-07-24 15:38:06,Software Engineering
+39,Senior Software Engineer / AI Developer,PakWheels,Lahore,,2026-07-24 15:38:06,Software Engineering
+40,"Full Stack AI Engineer (LLMs, RAG & AI Automation)",Bluesheep Technologies (Pvt) Ltd,Lahore,,2026-07-24 15:38:06,Engineering
+41,Senior Software Engineer - Angular,Creative Chaos,Lahore,,2026-07-24 15:38:06,Software Engineering
+42,Flutter Developer,HRHive,Lahore,,2026-07-24 15:38:06,Software Engineering
+43,Junior Automation Engineer (PLC Programmer),Prepac Engineering Industries Pvt Ltd,Lahore,,2026-07-24 15:38:06,Engineering
+44,"Software Engineer, iOS Core Product - Lahore, Pakistan",Speechify,Lahore,,2026-07-24 15:38:06,Software Engineering
+45,SQA Engineer,Teraception,Lahore,,2026-07-24 15:38:06,Software Engineering
+46,QA Engineer - Manual,Creative Chaos,Lahore,,2026-07-24 15:38:06,Software Engineering
+47,Jr. QA Engineer,Devsorb,Lahore,,2026-07-24 15:38:06,Software Engineering
+48,Jr. iOS Software Engineer,Careaxiom,Lahore,,2026-07-24 15:38:06,Software Engineering
+49,Java Engineer,AlphaGen Systems Inc,Lahore,,2026-07-24 15:38:06,Software Engineering
+50,Senior Full Stack Software Engineer,Aqovia,Lahore,,2026-07-24 15:38:06,Software Engineering
+51,Quality Assurance Engineer,Eazisols,Lahore,,2026-07-24 15:38:06,Software Engineering
+52,Fresh Graduates ( Python Django),Big Byte Insights,Lahore,,2026-07-24 15:38:06,Software Engineering
+53,Dev Ops Engineer,7 Kings Code LLC,Lahore,,2026-07-24 15:38:06,Software Engineering
+54,"Software Engineer, Data Infrastructure & Acquisition - Lahore, Pakistan",Speechify,Lahore,,2026-07-24 15:38:06,Software Engineering
+55,Software Engineer - iOS,Dubizzle Labs,Lahore,,2026-07-24 15:38:06,Software Engineering
+56,Software Development Engineer in Test,CodeNinja,Lahore,,2026-07-24 15:38:06,Software Engineering
+57,Senior Software Engineer,Adal Fintech (Pvt) Ltd.,Lahore,,2026-07-24 15:38:06,Software Engineering
+58,Full Stack Engineer / Web Developer - AU Software,Qureos Inc,Lahore,,2026-07-24 15:38:06,Software Engineering
+59,Full Stack Developer,Paypeople,Lahore,,2026-07-24 15:38:06,Software Engineering
+60,Mobile Application Developer (Fresh),Dubizzle Labs,Lahore,,2026-07-24 15:38:06,Software Engineering
+61,AWS DevOps Engineer,NorthBay Solutions,Lahore,,2026-07-24 15:38:06,Software Engineering
+62,React/Next.JS Front-End Developer,Frontline Data Solutions,Lahore,,2026-07-24 15:38:06,Software Engineering
+63,SQA Engineer,Innovation Insight,Lahore,,2026-07-24 15:38:06,Software Engineering
+64,Dot Net Developer,Alvayria Consulting,Lahore,,2026-07-24 15:38:06,Software Engineering
+65,Backend Developer,Contour Software,Lahore,,2026-07-24 15:38:06,Software Engineering
+66,Associate SQA Engineer,I&K ENTERPRISES,Lahore,,2026-07-24 15:38:06,Software Engineering
+67,Principal Software Engineer,Adal Fintech (Pvt) Ltd.,Lahore,,2026-07-24 15:38:06,Software Engineering
+68,Senior Software Test Engineer,Clustox,Lahore,,2026-07-24 15:38:06,Software Engineering
+69,Senior QA Engineer (100% Remote),Tether Operations Limited,Lahore,,2026-07-24 15:38:06,Software Engineering
+70,Senior AI Backend Engineer (LLM / RAG / Voice AI),QuadRoots Technology,Lahore,,2026-07-24 15:38:06,Software Engineering
+71,Associate QA Engineer,Digixvalley,Lahore,,2026-07-24 15:38:06,Software Engineering
+72,Associate AI Engineer ( Claude Certified Architect ),Digixvalley Pvt Ltd,Lahore,,2026-07-24 15:38:06,Software Engineering
+73,Senior Software Engineer (C# .NET),Aqovia,Lahore,,2026-07-24 15:38:06,Software Engineering
+74,Glowingsoft Hiring - QA Engineer (Manual & Automation),Glowingsoft Technologies,Lahore,,2026-07-24 15:38:06,Engineering
+75,Fullstack Engineer (React & NestJS) - Q-Solutions Technology Services,Qureos Inc,Lahore,,2026-07-24 15:38:06,Software Engineering
+76,Game Developer,Tribech Solutions,Lahore,,2026-07-24 15:38:06,Software Engineering
+77,Lead Flutter Engineer,Aqovia,Lahore,,2026-07-24 15:38:06,Software Engineering
+78,Principal Software Test Engineer - Manual + Automation,Clustox,Lahore,,2026-07-24 15:38:06,Engineering
+79,Associate Quality Assurance Engineer (C1-425107),Cloudelligent,Lahore,,2026-07-24 15:38:06,Software Engineering
+80,Full Stack Developer,Contour Software,Lahore,,2026-07-24 15:38:06,Software Engineering
+81,Senior Software Engineer - iOS,Dubizzle Labs,Lahore,,2026-07-24 15:38:06,Software Engineering
+82,Senior Software Engineer - Java,Creative Chaos,Lahore,,2026-07-24 15:38:06,Software Engineering
+83,"Senior Full Stack Engineer (.NET & Vue/React) - Fully Remote, CET",CoverGo,Lahore,,2026-07-24 15:38:06,Software Engineering
+84,Senior Software Engineer/ Software Development Lead,VOLTRO By Falkenherz,Lahore,,2026-07-24 15:38:06,Software Engineering
+85,Associate SQA Engineer,CureMD Healthcare,Lahore,,2026-07-24 15:38:06,Software Engineering
+86,Sr. Full Stack Developer (.NET+Angular),NKU Technologies Pvt.Ltd.,Lahore,,2026-07-24 15:38:06,Software Engineering
+87,Principal Software Engineer,Eon Health,Lahore,,2026-07-24 15:38:06,Software Engineering
+88,Mechatronics Engineer – Firmware & R&D (Tracker / MDVR),Tracking World (PVT) Ltd,Lahore,,2026-07-24 15:38:06,Engineering
+89,.Net Developer (C#),Zilon International,Lahore,,2026-07-24 15:38:06,Software Engineering
+90,Java Full Stack Developer,AlphaGen Systems Inc,Lahore,,2026-07-24 15:38:06,Software Engineering
+91,Senior Full Stack Developer (MERN),Innovation Insight,Lahore,,2026-07-24 15:38:06,Software Engineering
+92,Game Engineer,InvoZone,Lahore,,2026-07-24 15:38:06,Software Engineering
+93,Junior SQA Analyst,Contour Software,Lahore,,2026-07-24 15:38:06,Software Engineering
+94,Laravel + Vue.Js Developer (1.5 to 3 years of experience),Appsians.,Lahore,,2026-07-24 15:38:06,Software Engineering
+95,PLC Programmer (Allen-Bradley / Rockwell),Yummy Milk Products (Pvt) Ltd,Lahore,,2026-07-24 15:38:06,Engineering
+96,SQA Trainee,Contour Software,Lahore,,2026-07-24 15:38:06,Software Engineering
+97,Junior Odoo Developer,Cyngro,Lahore,,2026-07-24 15:38:06,Software Engineering
+98,"Senior Software Quality Engineer (SQE) - LMS, EdTech",Aqovia,Lahore,,2026-07-24 15:38:06,Software Engineering
+99,Flutter Developer,IRG Global,Lahore,,2026-07-24 15:38:06,Software Engineering
+100,Android Developer,HRive,Lahore,,2026-07-24 15:38:06,Software Engineering
+101,Female SQa Engineer,Upgenics International,Lahore,,2026-07-24 15:38:06,Software Engineering
+102,QA Automation and Performance Engineer,Nevka software solutions,Lahore,,2026-07-24 15:38:06,Engineering
+103,"Software Engineer in Test - Lead Lahore, Punjab, Pakistan",TCP Software,Lahore,,2026-07-24 15:38:06,Software Engineering
+104,Dot net developer,SEER SOLUTIONS DMCC,Lahore,,2026-07-24 15:38:06,Software Engineering
+105,Senior QA Engineer,Adal Fintech (Pvt) Ltd.,Lahore,,2026-07-24 15:38:06,Software Engineering
+106,Software Architect(Java),Contour Software,Lahore,,2026-07-24 15:38:06,Software Engineering
+107,Solutions Architect,Dvxel Inc.,Lahore,,2026-07-24 15:38:06,Software Engineering
+108,Senior SQA Engineer,Aqovia,Lahore,,2026-07-24 15:38:06,Software Engineering
+109,iOS Developer,HRHive,Lahore,,2026-07-24 15:38:06,Software Engineering
+110,Senior DevOps / Infrastructure Engineer (AI & EdTech),Aqovia,Lahore,,2026-07-24 15:38:06,Software Engineering
+111,Senior Full Stack Developer,Contour Software,Lahore,,2026-07-24 15:38:06,Software Engineering
+112,"SQA Engineers (Auto & Manual, 2-3 years Exp with E-Commerce)",Xcentric Services,Lahore,,2026-07-24 15:38:06,Software Engineering
+113,Principal DevOps Engineer,CureMD Healthcare,Lahore,,2026-07-24 15:38:06,Software Engineering
+114,"Software Engineer in Test II (Performance Testing Specialist) Lahore, Punjab, Pakistan",TCP Software,Lahore,,2026-07-24 15:38:06,Software Engineering
+115,WordPress Intern,Byteio Digital Solutions,Lahore,,2026-07-24 15:38:06,Software Engineering
+116,"Solutions Architect (LMS, EdTech)",Aqovia,Lahore,,2026-07-24 15:38:06,Software Engineering
+117,Senior Flutter Developer,Digixvalley,Lahore,,2026-07-24 15:38:06,Software Engineering
+118,Android Developer – Native Banking Application,Nevka software solutions,Lahore,,2026-07-24 15:38:06,Software Engineering
+119,Full Stack Developer(WordPress Plugin & React),Zilon International,Lahore,,2026-07-24 15:38:06,Software Engineering
+120,Senior Software Developer(Java),Contour Software,Lahore,,2026-07-24 15:38:06,Software Engineering
+121,Solution Architect(Java),Contour Software,Lahore,,2026-07-24 15:38:06,Software Engineering
+122,Mid/Senior Java Developer,Contour Software,Lahore,,2026-07-24 15:38:06,Software Engineering
+123,Software Developer,"EXA Capital, Inc",Karachi,,2026-07-24 15:38:06,Software Engineering
+124,Software Engineer,Masterkey,Karachi,,2026-07-24 15:38:06,Software Engineering
+125,Software Engineer-I,RIKSOF (Private) Limited,Karachi,,2026-07-24 15:38:06,Software Engineering
+126,Software Engineer,Innovative Pvt Ltd,Karachi,,2026-07-24 15:38:06,Software Engineering
+127,Software Developer/Engineer,Qureos Inc,Karachi,,2026-07-24 15:38:06,Software Engineering
+128,Software Engineer II,NCR Atleos,Karachi,,2026-07-24 15:38:06,Software Engineering
+129,Software Engineer - Core Back-end MVC/.NET,Vertika,Karachi,,2026-07-24 15:38:06,Software Engineering
+130,Software Engineer,Imperium Dynamics,Karachi,,2026-07-24 15:38:06,Software Engineering
+131,Software Engineer / Full-Stack Developer,Qureos Inc,Karachi,,2026-07-24 15:38:06,Software Engineering
+132,Software Engineer (FinTech – Remote),Qureos Inc,Karachi,,2026-07-24 15:38:06,Software Engineering
+133,Software Engineer - Node.js,Eocean(PVT),Karachi,,2026-07-24 15:38:06,Software Engineering
+134,Software Support Engineer,Limton Innovative Systems,Karachi,,2026-07-24 15:38:06,Software Engineering
+135,Sr Software Engineer,Code Avenue,Karachi,,2026-07-24 15:38:06,Software Engineering
+136,Software Engineer (.Net),Techsurge Pvt. Ltd.,Karachi,,2026-07-24 15:38:06,Software Engineering
+137,Junior Software Developer (.NET),Sofcom Private Limited,Karachi,,2026-07-24 15:38:06,Software Engineering
+138,Principal Engineer (Backend / System Architecture),Symits HR,Karachi,,2026-07-24 15:38:06,Software Engineering
+139,Software & Applications Developer,Atlas Controls (Pvt) Ltd,Karachi,,2026-07-24 15:38:06,Software Engineering
+140,Software QA Engineer,Livetecs,Karachi,,2026-07-24 15:38:06,Software Engineering
+141,AI QA Engineer (0-1 year),Agilosoft,Karachi,,2026-07-24 15:38:06,Software Engineering
+142,Software Engineer,Dyconsol,Karachi,,2026-07-24 15:38:06,Software Engineering
+143,Intermediate Software Developer,Contour Software,Karachi,,2026-07-24 15:38:06,Software Engineering
+144,Software Engineer - I (Integrations),Pakistan Single Window,Karachi,,2026-07-24 15:38:06,Software Engineering
+145,Software Engineer (Java),TERESOL PVT. LTD,Karachi,,2026-07-24 15:38:06,Software Engineering
+146,Software Quality Engineer (SQE),Forsee Logistics,Karachi,,2026-07-24 15:38:06,Software Engineering
+147,Software Engineer - Backend .Net,VIDIZMO LLC,Karachi,,2026-07-24 15:38:06,Software Engineering
+148,CNC Machining Programmer,Aice,Karachi,,2026-07-24 15:38:06,Other
+149,Senior Software Engineer,Adal Fintech (Pvt) Ltd.,Karachi,,2026-07-24 15:38:06,Software Engineering
+150,Software Engineer (.Net) - FEMALE,Techsurge Pvt. Ltd.,Karachi,,2026-07-24 15:38:06,Software Engineering
+151,"Software Engineer, Data Infrastructure & Acquisition - Karachi, Pakistan",Speechify,Karachi,,2026-07-24 15:38:06,Software Engineering
+152,Senior Backend Platform Engineer,Arthur Lawrence,Karachi,,2026-07-24 15:38:06,Software Engineering
+153,Junior DevOps Engineer,Digital Graphiks,Karachi,,2026-07-24 15:38:06,Software Engineering
+154,Software Developer.,Asianet Pakistan,Karachi,,2026-07-24 15:38:06,Software Engineering
+155,Firmware Engineer,TechBiz Global GmbH,Karachi,,2026-07-24 15:38:06,Engineering
+156,Software Quality Assurance Engineer,StormFiber,Karachi,,2026-07-24 15:38:06,Software Engineering
+157,Software Quality Assurance Engineer,KMNR Engineering (Pvt.) Ltd,Karachi,,2026-07-24 15:38:06,Software Engineering
+158,Junior Full Stack MERN Developer,Design Henge,Karachi,,2026-07-24 15:38:06,Software Engineering
+159,Principal Software Engineer - I (Mobile),Pakistan Single Window,Karachi,,2026-07-24 15:38:06,Software Engineering
+160,Principal Software Engineer,Adal Fintech (Pvt) Ltd.,Karachi,,2026-07-24 15:38:06,Software Engineering
+161,Junior .NET Developer,Contour Software,Karachi,,2026-07-24 15:38:06,Software Engineering
+162,Senior Frontend Engineer,Moniepoint,Karachi,,2026-07-24 15:38:06,Software Engineering
+163,Senior Software Quality Assurance Engineer (Manual + Automation),Fossphorus Software House,Karachi,,2026-07-24 15:38:06,Engineering
+164,Senior Software Engineer (PHP / AWS),TeeSquare,Karachi,,2026-07-24 15:38:06,Software Engineering
+165,Senior Software Developer,Contour Software,Karachi,,2026-07-24 15:38:06,Software Engineering
+166,Devops Engineer,Datamatics Technologies,Karachi,,2026-07-24 15:38:06,Software Engineering
+167,Software Architect - ML/AI/Gen AI,10Pearls,Karachi,,2026-07-24 15:38:06,Software Engineering
+168,Sr. Software Engineer - I (Integrations),Pakistan Single Window,Karachi,,2026-07-24 15:38:06,Software Engineering
+169,Web Developer,Tech Vays,Karachi,,2026-07-24 15:38:06,Software Engineering
+170,Senior Software Engineer - II (Backend) | Contractual,Pakistan Single Window,Karachi,,2026-07-24 15:38:06,Software Engineering
+171,Frontend Developer,TERESOL PVT. LTD,Karachi,,2026-07-24 15:38:06,Software Engineering
+172,Management Trainee Officer (MTO) – Frontend Engineering (Night Shift),Active8 Wireless,Karachi,,2026-07-24 15:38:06,Software Engineering
+173,Management Trainee Officer (MTO) – Backend Engineering (Night Shift),Active8 Wireless,Karachi,,2026-07-24 15:38:06,Software Engineering
+174,Trainee DevOps Engineer,RIKSOF (Private) Limited,Karachi,,2026-07-24 15:38:06,Software Engineering
+175,SQA Engineer,Impetus Systems,Karachi,,2026-07-24 15:38:06,Software Engineering
+176,Angular Developer - Frontend,Pivotize Consulting,Karachi,,2026-07-24 15:38:06,Software Engineering
+177,Java Engineers,Confiz,Karachi,,2026-07-24 15:38:06,Software Engineering
+178,Senior Full-Stack Engineer,NextgenI,Karachi,,2026-07-24 15:38:06,Software Engineering
+179,"Senior Full Stack Engineer (.NET & Vue/React) - Fully Remote, CET",CoverGo,Karachi,,2026-07-24 15:38:06,Software Engineering
+180,Java Developer,Qureos Inc,Karachi,,2026-07-24 15:38:06,Software Engineering
+181,Senior Software Engineer - Java,Creative Chaos,Karachi,,2026-07-24 15:38:06,Software Engineering
+182,Software Intern ASP.Net MVC Dote Net Core Developer,ICT Systems (Private) Limited,Karachi,,2026-07-24 15:38:06,Software Engineering
+183,SQA Engineer,Qureos Inc,Karachi,,2026-07-24 15:38:06,Software Engineering
+184,QA Engineer - Automation,Creative Chaos,Karachi,,2026-07-24 15:38:06,Engineering
+185,SQA Engineer (Mid Level),LN Technologies,Karachi,,2026-07-24 15:38:06,Software Engineering
+186,Automation Engineer,Contour Software,Karachi,,2026-07-24 15:38:06,Engineering
+187,Full Stack Developer (3–11 Years Experience),Datamatics Technologies,Karachi,,2026-07-24 15:38:06,Software Engineering
+188,C++ Engineer,Avanza Solutions,Karachi,,2026-07-24 15:38:06,Software Engineering
+189,Platform Engineer,Datamatics Technologies,Karachi,,2026-07-24 15:38:06,Software Engineering
+190,Devops Engineer,NorthBay Solutions,Karachi,,2026-07-24 15:38:06,Software Engineering
+191,SQA Engineer,Strugbits (PVT.) LTD,Karachi,,2026-07-24 15:38:06,Software Engineering
+192,Quality Assurance (QA) Engineer,AHF Technologies,Karachi,,2026-07-24 15:38:06,Software Engineering
+193,Python Internship,InApp Solutions,Karachi,,2026-07-24 15:38:06,Software Engineering
+194,Dot Net Developer (Mid Level),LN Technologies,Karachi,,2026-07-24 15:38:06,Software Engineering
+195,Dot NET Core Developer (ERP Module),Ambsan Technologies,Karachi,,2026-07-24 15:38:06,Software Engineering
+196,"Senior Software Engineer, Windows/Desktop Applications - Karachi, Pakistan",Speechify,Karachi,,2026-07-24 15:38:06,Software Engineering
+197,Full Stack Developer,Conure Information Technology Services,Karachi,,2026-07-24 15:38:06,Software Engineering
+198,Principal Software Engineer - II (Contractual),Pakistan Single Window,Karachi,,2026-07-24 15:38:06,Software Engineering
+199,Mid-Senior Software Developer,Idenfo,Karachi,,2026-07-24 15:38:06,Software Engineering
+200,SQA Engineer,Wavetec,Karachi,,2026-07-24 15:38:06,Software Engineering
+201,Java Engineer with Python Familiarity,Confiz,Karachi,,2026-07-24 15:38:06,Software Engineering
+202,SQA Engineer (Mid level),WeUno Technologies,Karachi,,2026-07-24 15:38:06,Software Engineering
+203,SQA Engineer,Quanrio LLP,Karachi,,2026-07-24 15:38:06,Software Engineering
+204,Full stack Engineer (Angular & .Net),VIDIZMO LLC,Karachi,,2026-07-24 15:38:06,Software Engineering
+205,Associate DevOps Support Engineer,Hul Hub,Karachi,,2026-07-24 15:38:06,Software Engineering
+206,Software Architect - Fullstack - Afternoon Shift,10Pearls,Karachi,,2026-07-24 15:38:06,Software Engineering
+207,DevOps Engineer,Contour Software,Karachi,,2026-07-24 15:38:06,Software Engineering
+208,SQA Engineer,XAutonomous L.L.C,Karachi,,2026-07-24 15:38:06,Software Engineering
+209,Backend Architect - Ontology + Python + AI/ML - Afternoon,10Pearls,Karachi,,2026-07-24 15:38:06,Software Engineering
+210,QA Automation Engineer,Enterprise64,Karachi,,2026-07-24 15:38:06,Engineering
+211,Full-Stack Engineer Java/Spring Boot + React JS,Confiz,Karachi,,2026-07-24 15:38:06,Software Engineering
+212,Staff/Senior Software Consultant - Observability Engineer,10Pearls,Karachi,,2026-07-24 15:38:06,Software Engineering
+213,Senior Software Developer (PHP / Laravel),A Security Service provider,Karachi,,2026-07-24 15:38:06,Software Engineering
+214,Stream Engineer,Pi Pakistan Pvt. Limited,Karachi,,2026-07-24 15:38:06,Software Engineering
+215,Site Reliability Engineer (Remote),Qureos Inc,Karachi,,2026-07-24 15:38:06,Software Engineering
+216,Senior Full Stack Developer,Q-Solutions,Karachi,,2026-07-24 15:38:06,Software Engineering
+217,Implementation Engineer,Adal Fintech (Pvt) Ltd.,Karachi,,2026-07-24 15:38:06,Software Engineering
+218,Software Quality Assurance Engineer (SQA) - Intern - Female,ICT Systems (Private) Limited,Karachi,,2026-07-24 15:38:06,Software Engineering
+219,Senior Full Stack Developer,Contour Software,Karachi,,2026-07-24 15:38:06,Software Engineering
+220,SQA Intern (Morning Shift),DotClick,Karachi,,2026-07-24 15:38:06,Software Engineering
+221,Mobile & Web Application Developer,IOT Systems PVT. LTD.,Karachi,,2026-07-24 15:38:06,Software Engineering
+222,Principal Software Consultant - AI/ML Engineer,10Pearls,Karachi,,2026-07-24 15:38:06,Software Engineering
+223,Java Full Stack Developer,Contour Software,Karachi,,2026-07-24 15:38:06,Software Engineering
+224,MLOps & AI Platform Engineer,Datamatics Technologies,Karachi,,2026-07-24 15:38:06,Software Engineering
+225,Integration Developer,Datamatics Technologies,Karachi,,2026-07-24 15:38:06,Software Engineering
+226,Senior QA Engineer,Adal Fintech (Pvt) Ltd.,Karachi,,2026-07-24 15:38:06,Software Engineering
+227,Java Support Engineer - Pakistan - Karachi,DotCMS,Karachi,,2026-07-24 15:38:07,Software Engineering
+228,Principal QA Engineer,NorthBay Solutions,Karachi,,2026-07-24 15:38:07,Software Engineering
+229,Technical Lead Java Engineer with Python Familiarity,Confiz,Karachi,,2026-07-24 15:38:07,Software Engineering
+230,Enterprise Application Developer,Datamatics Technologies,Karachi,,2026-07-24 15:38:07,Software Engineering
+231,Senior Front End Developer (React),Contour Software,Karachi,,2026-07-24 15:38:07,Software Engineering
+232,CAM ENGINEER / PROGRAMMER,R&D Engineering,Karachi,,2026-07-24 15:38:07,Software Engineering
+233,Laravel / PhP Developer - Full time ( KHI OFFICE ),Cloud Lab,Karachi,,2026-07-24 15:38:07,Software Engineering
+234,Mobile Application Developer,Dolphin Advanced Technology Services,Karachi,,2026-07-24 15:38:07,Software Engineering
+235,0204 QA Test,Qureos Inc,Karachi,,2026-07-24 15:38:07,Software Engineering
+236,Software Architect - Salesforce - Afternoon,10Pearls,Karachi,,2026-07-24 15:38:07,Software Engineering
+237,DotnetCore Developer (Senior to Lead Level),LN Technologies,Karachi,,2026-07-24 15:38:07,Software Engineering
+238,Mobile Application Developer - Android,Leopards Courier Services,Karachi,,2026-07-24 15:38:07,Software Engineering
+239,Principal SQA Engineer II,Pakistan Single Window,Karachi,,2026-07-24 15:38:07,Software Engineering
+240,Senior SQA Engineer - I (Contractual),Pakistan Single Window,Karachi,,2026-07-24 15:38:07,Software Engineering
+241,Mobile Application Developer- React Native,Symits HR,Karachi,,2026-07-24 15:38:07,Software Engineering
+242,Staff/Senior Software Consultant - Elixir,10Pearls,Karachi,,2026-07-24 15:38:07,Software Engineering
+243,"Principal Java Engineer – Spring Boot, Kafka & Kubernetes",Confiz,Karachi,,2026-07-24 15:38:07,Software Engineering
+244,Senior/Principal Java Developer,Confiz,Karachi,,2026-07-24 15:38:07,Software Engineering
+245,"Staff/Senior Software Consultant - Azure, AKS, MLflow & Kubeflow",10Pearls,Karachi,,2026-07-24 15:38:07,Software Engineering
+246,Senior DevOps Consultant - Afternoon - Fulltime,10Pearls,Karachi,,2026-07-24 15:38:07,Software Engineering
+247,Software Engineer,Meer Technologies LLC,Islamabad,,2026-07-24 15:38:07,Software Engineering
+248,"Software Engineer, Platform - Islamabad, Pakistan",Speechify,Islamabad,,2026-07-24 15:38:07,Software Engineering
+249,Full Stack Software Engineer Mid Senior Level,WorkStaff360,Islamabad,,2026-07-24 15:38:07,Software Engineering
+250,Software Engineer,MicroAgility Services,Islamabad,,2026-07-24 15:38:07,Software Engineering
+251,Principal Software Engineer (.Net),Embrace Technologies Private Limited,Islamabad,,2026-07-24 15:38:07,Software Engineering
+252,Software Developer Intern,Comtanix,Rawalpindi,,2026-07-24 15:38:07,Software Engineering
+253,AI & Backend Engineer - Production AI & LLM Systems | Pakistan,Volga Partners,Islamabad,,2026-07-24 15:38:07,Engineering
+254,Software Engineer/.Net Developers,Dera IT Solutions,Islamabad,,2026-07-24 15:38:07,Software Engineering
+255,Associate Software Engineer – AI/LLM Applications,GRID Systems (PVT) Ltd.,Islamabad,,2026-07-24 15:38:07,Software Engineering
+256,Assistant Engineer (Software & Data Systems),CDigital,Islamabad,,2026-07-24 15:38:07,Software Engineering
+257,Senior Software Engineer | AI & Python,Texinity Technologies,Islamabad,,2026-07-24 15:38:07,Software Engineering
+258,Principal Software & AI Engineer - Pakistan,Volga Partners,Islamabad,,2026-07-24 15:38:07,Software Engineering
+259,Software Engineer,Bahria Town Career,Rawalpindi,,2026-07-24 15:38:07,Software Engineering
+260,Software Engineer,MTBC,Rawalpindi,,2026-07-24 15:38:07,Software Engineering
+261,Full-Stack Engineer,Darkroom,Islamabad,,2026-07-24 15:38:07,Software Engineering
+262,Software Engineer – AI/LLM Applications,GRID Systems (PVT) Ltd.,Islamabad,,2026-07-24 15:38:07,Software Engineering
+263,Firmware Engineer,TechBiz Global GmbH,Islamabad,,2026-07-24 15:38:07,Engineering
+264,Junior SQA Engineer,iOPTIME Pvt. Limited,Islamabad,,2026-07-24 15:38:07,Software Engineering
+265,Sr. Software Engineer,MicroAgility Services,Islamabad,,2026-07-24 15:38:07,Software Engineering
+266,Principal Software Engineer I,Zones,Islamabad,,2026-07-24 15:38:07,Software Engineering
+267,Software Engineer ( Flutter & .NET ),Metropolitan Warehouse & Delivery Corp,Rawalpindi,,2026-07-24 15:38:07,Software Engineering
+268,Backend AI & Data Pipeline Engineer,Seeka Technology,Islamabad,,2026-07-24 15:38:07,Software Engineering
+269,Software Engineer – iOS,GRID Systems (PVT) Ltd.,Islamabad,,2026-07-24 15:38:07,Software Engineering
+270,Front End Engineer - Remote,EventMobi,Islamabad,,2026-07-24 15:38:07,Software Engineering
+271,Junior QA Engineer,APPINSNAP,Islamabad,,2026-07-24 15:38:07,Software Engineering
+272,Senior Software Engineer - Java + MongoDB,Convo,Islamabad,,2026-07-24 15:38:07,Software Engineering
+273,"Software Engineer, iOS Core Product - Islamabad, Pakistan",Speechify,Islamabad,,2026-07-24 15:38:07,Software Engineering
+274,SQA Engineer,iOPTIME Pvt. Limited,Islamabad,,2026-07-24 15:38:07,Software Engineering
+275,Consultant Programmer (AI-Assisted CRM & Financial Module Customization),Immigration Experts,Islamabad,,2026-07-24 15:38:07,Data Science & AI
+276,Senior Backend Engineer,Skylabs AI,Islamabad,,2026-07-24 15:38:07,Software Engineering
+277,MERN Stack Developer,Veevo Tech,Islamabad,,2026-07-24 15:38:07,Software Engineering
+278,Junior Developer,ContentStudio,Islamabad,,2026-07-24 15:38:07,Software Engineering
+279,Lead Fullstack Engineer,Skylabs AI,Islamabad,,2026-07-24 15:38:07,Software Engineering
+280,"Senior Software Engineer, Core Experiences - Islamabad, Pakistan",Speechify,Islamabad,,2026-07-24 15:38:07,Software Engineering
+281,"Senior Software Engineer, Windows/Desktop Applications - Islamabad, Pakistan",Speechify,Islamabad,,2026-07-24 15:38:07,Software Engineering
+282,Web Applications Developer,Arete,Islamabad,,2026-07-24 15:38:07,Software Engineering
+283,Aveva PI Software Engineer,Müller`s Solutions,Islamabad,,2026-07-24 15:38:07,Software Engineering
+284,QA Engineer,ZENCLOUD TECHNOLOGIES (PRIVATE) LIMITED,Islamabad,,2026-07-24 15:38:07,Software Engineering
+285,Senior .NET Engineer,Ciklum,Islamabad,,2026-07-24 15:38:07,Software Engineering
+286,Principal Software Engineer,Adal Fintech (Pvt) Ltd.,Islamabad,,2026-07-24 15:38:07,Software Engineering
+287,Backend System Engineer - GO/C & C++,SafariFone,Islamabad,,2026-07-24 15:38:07,Software Engineering
+288,Software Architect,AutoScale Ventures,Islamabad,,2026-07-24 15:38:07,Software Engineering
+289,Senior Backend Engineer (Laravel),Rightangled,Islamabad,,2026-07-24 15:38:07,Software Engineering
+290,Associate Quality Assurance Engineer,GRID Systems (PVT) Ltd.,Islamabad,,2026-07-24 15:38:07,Software Engineering
+291,Software Quality Assurance (SQA),Funsol Technologies,Islamabad,,2026-07-24 15:38:07,Software Engineering
+292,Senior Software Engineer - Java,Creative Chaos,Islamabad,,2026-07-24 15:38:07,Software Engineering
+293,Principal Software Engineer- React Native,Creative Chaos,Islamabad,,2026-07-24 15:38:07,Software Engineering
+294,Senior Software Developer – Agentic AI,Grid Hosting,Islamabad,,2026-07-24 15:38:07,Software Engineering
+295,AWS DevOps Engineer,NorthBay Solutions,Islamabad,,2026-07-24 15:38:07,Software Engineering
+296,Laravel Developer,SOURCE CODE ACADEMIA,Rawalpindi,,2026-07-24 15:38:07,Software Engineering
+297,Senior Python Engineer,Skylabs AI,Islamabad,,2026-07-24 15:38:07,Software Engineering
+298,"Senior Full Stack Engineer (.NET & Vue/React) - Fully Remote, CET",CoverGo,Islamabad,,2026-07-24 15:38:07,Software Engineering
+299,Associate Quality Assurance Engineer (C1-425107),Cloudelligent,Islamabad,,2026-07-24 15:38:07,Software Engineering
+300,Senior/Staff/Principal Software Consultant - FullStack - Morning Shift -,10Pearls,Islamabad,,2026-07-24 15:38:07,Software Engineering
+301,SQA Engineer (Mid level),Mob Inspire (Pvt) Ltd,Rawalpindi,,2026-07-24 15:38:07,Software Engineering
+302,Senior Software Engineer – iOS,GRID Systems (PVT) Ltd.,Islamabad,,2026-07-24 15:38:07,Software Engineering
+303,Senior Software Engineer - Java Full Stack Developer,GRID Systems (PVT) Ltd.,Islamabad,,2026-07-24 15:38:07,Software Engineering
+304,DevOps Engineer,MTBC,Rawalpindi,,2026-07-24 15:38:07,Software Engineering
+305,Jr. SQA Automation Engineer,Zoneomics,Rawalpindi,,2026-07-24 15:38:07,Engineering
+306,Technical Lead - Embedded Systems,Better Devices GmbH,Islamabad,,2026-07-24 15:38:07,Other
+307,Sr. SQA Engineer,En Route Technologies Pakistan,Islamabad,,2026-07-24 15:38:07,Software Engineering
+308,Software Quality Assurance (Intern) - iOS,Funsol Technologies,Islamabad,,2026-07-24 15:38:07,Software Engineering
+309,Flutter Developer,Centrox AI,Islamabad,,2026-07-24 15:38:07,Software Engineering
+310,Junior Accounting Software & CRM Developer Bahria Town Phase 7 Rwp,lemacon,Rawalpindi,,2026-07-24 15:38:07,Software Engineering
+311,Internship for php laravel developer,Aricrypta,Islamabad,,2026-07-24 15:38:07,Software Engineering
+312,Laravel and Vue.js developer with AI integration experience,Trees Technologies,Rawalpindi,,2026-07-24 15:38:07,Software Engineering
+313,Java Developer,APPINSNAP,Islamabad,,2026-07-24 15:38:07,Software Engineering
+314,Senior DevOps Engineer,Skylabs AI,Islamabad,,2026-07-24 15:38:07,Software Engineering
+315,DevOps & Site Reliability Engineer (GCP),Qureos Inc,Islamabad,,2026-07-24 15:38:07,Software Engineering
+316,Senior Backend-Focused Full-Stack Engineer (eCommerce & AI Systems),GrowthRatio Solutions,Rawalpindi,,2026-07-24 15:38:07,Software Engineering
+317,Senior Front End Engineer - Remote,EventMobi,Islamabad,,2026-07-24 15:38:07,Software Engineering
+318,Mobile Apps Developer,Arete,Islamabad,,2026-07-24 15:38:07,Software Engineering
+319,Java Backend Developer - WFH/ Remote-Work (5 Years Exp Needed At least),Seeka Technology,Islamabad,,2026-07-24 15:38:07,Software Engineering
+320,Senior C++ Systems Engineer,Skylabs AI,Islamabad,,2026-07-24 15:38:07,Software Engineering
+321,Technical Lead,31 Green Ltd,Islamabad,,2026-07-24 15:38:07,Other
+322,SQA,New Economy Technology Solutions,Islamabad,,2026-07-24 15:38:07,Software Engineering
+323,SQA Intern,Metavystic,Rawalpindi,,2026-07-24 15:38:07,Software Engineering
+324,Senior QA Automation Engineer - AI Driven,9D Technologies & Imagination AI,Rawalpindi,,2026-07-24 15:38:07,Engineering
+325,Android Developer,Dera IT Solutions,Islamabad,,2026-07-24 15:38:07,Software Engineering
+326,iOS Developer,iOPTIME Pvt. Limited,Islamabad,,2026-07-24 15:38:07,Software Engineering
+327,"Mid to Senior QA Engineer (Manual, Automation & Mobile Testing)",Vorksol pvt.ltd,Rawalpindi,,2026-07-24 15:38:07,Engineering
+328,Senior iOS Engineer,9D Technologies & Imagination AI,Rawalpindi,,2026-07-24 15:38:07,Software Engineering
+329,Mobile Application Developer - React Native,Let's Outsource (SMC PVT LTD),Rawalpindi,,2026-07-24 15:38:07,Software Engineering
+330,Solution Architect,10Pearls,Islamabad,,2026-07-24 15:38:07,Software Engineering
+331,Lead Android Developer,APPINSNAP,Islamabad,,2026-07-24 15:38:07,Software Engineering
+332,Mobile Application Developer (Android & iOS),FAJ IT Solutions,Islamabad,,2026-07-24 15:38:07,Software Engineering
+333,Staff/Senior Test Consultant (SDET) - Morning Shift,10Pearls,Islamabad,,2026-07-24 15:38:07,Other
+334,Staff/Senior DevOps Consultant - Observability,10Pearls,Islamabad,,2026-07-24 15:38:07,Software Engineering
+335,Data Analyst,NCBA&E FLC,Lahore,,2026-07-24 15:38:07,Data Science & AI
+336,Jr. Data Analyst – Retail Operations,Atif Brothers,Lahore,,2026-07-24 15:38:07,Data Science & AI
+337,Data Analyst,Bootlogix,Lahore,,2026-07-24 15:38:07,Data Science & AI
+338,Data Analyst,Metal,Lahore,,2026-07-24 15:38:07,Data Science & AI
+339,Data Analyst,"Burq, Inc.",Lahore,,2026-07-24 15:38:07,Data Science & AI
+340,DATA ANALYST,Dignosco,Lahore,,2026-07-24 15:38:07,Data Science & AI
+341,Executive Data Analyst,ClearPath Orthodontics,Lahore,,2026-07-24 15:38:07,Data Science & AI
+342,Data & Sales Analyst,INSPIRE BUILDERS GENERAL CONTRACTING COMPANY,Lahore,,2026-07-24 15:38:07,Data Science & AI
+343,Data Conversion Analyst,Contour Software,Lahore,,2026-07-24 15:38:07,Data Science & AI
+344,MIS Officer / Data Analyst,Shams & Brothers,Lahore,,2026-07-24 15:38:07,Data Science & AI
+345,Remote - Application Development Analyst,"World Business Lenders, LLC",Lahore,,2026-07-24 15:38:07,Data Science & AI
+346,Data Analytics Engineer,International Rescue Committee,Lahore,,2026-07-24 15:38:07,Software Engineering
+347,Associate Data engineer,symufolk,Lahore,,2026-07-24 15:38:07,Software Engineering
+348,Data Engineer,InvoZone,Lahore,,2026-07-24 15:38:07,Software Engineering
+349,Data Engineer,"Burq, Inc.",Lahore,,2026-07-24 15:38:07,Software Engineering
+350,Business Intelligence Analyst,Namuve,Lahore,,2026-07-24 15:38:07,Data Science & AI
+351,Senior Data Engineer,Symufolk,Lahore,,2026-07-24 15:38:07,Software Engineering
+352,Female - Associate Data Engineer,Symufolk,Lahore,,2026-07-24 15:38:07,Software Engineering
+353,Senior Data Insights Analyst (AI & EdTech),Aqovia,Lahore,,2026-07-24 15:38:07,Data Science & AI
+354,Business Analyst,UDHC Lahore,Lahore,,2026-07-24 15:38:07,Data Science & AI
+355,BI Quantitative Analyst,Caramel Tech Studios,Lahore,,2026-07-24 15:38:07,Data Science & AI
+356,Data Engineer (4-5 Years),Algo,Lahore,,2026-07-24 15:38:07,Software Engineering
+357,SOC Analyst L1,Zones,Lahore,,2026-07-24 15:38:07,Data Science & AI
+358,Senior Data Engineer,NorthBay Solutions,Lahore,,2026-07-24 15:38:07,Software Engineering
+359,PMO Analyst,CureMD Healthcare,Lahore,,2026-07-24 15:38:07,Data Science & AI
+360,Project Manager,UDHC Lahore,Lahore,,2026-07-24 15:38:07,Management
+361,Senior Business Analyst,Adal Fintech (Pvt) Ltd.,Lahore,,2026-07-24 15:38:07,Data Science & AI
+362,"Power Market Analyst - Dubai, UAE",Cobblestone Energy.,Lahore,,2026-07-24 15:38:07,Data Science & AI
+363,Senior Software Developer (SQL Server + VB.NET),Contour Software,Lahore,,2026-07-24 15:38:07,Software Engineering
+364,Business Analyst (CRM & ERP Implementations),FAIRCHANCE FOR CRM,Lahore,,2026-07-24 15:38:07,Data Science & AI
+365,Senior Product Designer / UX Engineer (AI & EdTech),Aqovia,Lahore,,2026-07-24 15:38:07,Software Engineering
+366,Senior Technical Business Analyst - LMS/EdTech,Aqovia,Lahore,,2026-07-24 15:38:07,Data Science & AI
+367,Lead GRC Analyst,Contour Software,Lahore,,2026-07-24 15:38:07,Data Science & AI
+368,HIS Implementation Manager,Pukat Technology Pvt Ltd,Lahore,,2026-07-24 15:38:07,Management
+369,Senior Business Analyst (AI & EdTech),Aqovia,Lahore,,2026-07-24 15:38:07,Data Science & AI
+370,Project Manager / Product Owner – US Healthcare,Prima Systems,Lahore,,2026-07-24 15:38:07,Management
+371,Principal/Staff Machine Learning Engineer (Generative AI + LLM),10Pearls,Lahore,,2026-07-24 15:38:07,Software Engineering
+372,Senior Product Manager - Cybersecurity Solutions,SparkAI,Lahore,,2026-07-24 15:38:07,IT Infrastructure
+373,MS Excel Data Analyst,Curated Cloud Consulting Company,Karachi,,2026-07-24 15:38:07,Data Science & AI
+374,Data Analyst,Resource Linked private limited,Karachi,,2026-07-24 15:38:07,Data Science & AI
+375,Data Analyst,OD Pakistan,Karachi,,2026-07-24 15:38:07,Data Science & AI
+376,Remote Data Analyst,Qureos Inc,Karachi,,2026-07-24 15:38:07,Data Science & AI
+377,WFH Data Analyst,Qureos Inc,Karachi,,2026-07-24 15:38:07,Data Science & AI
+378,Data Analyst,Qureos Inc,Karachi,,2026-07-24 15:38:07,Data Science & AI
+379,Senior Data Analyst,ART,Karachi,,2026-07-24 15:38:07,Data Science & AI
+380,Data & Reporting Analyst,PwC,Karachi,,2026-07-24 15:38:07,Data Science & AI
+381,Data Analyst – Business Intelligence & Data Reporting Specialist,Qureos Inc,Karachi,,2026-07-24 15:38:07,Data Science & AI
+382,Data Analyst / Data Scientist,Qureos Inc,Karachi,,2026-07-24 15:38:07,Data Science & AI
+383,Data Analyst - Power Bi Specialist (For Automative Industry - Motorcycle Spareparts),SAZ Enterprises,Karachi,,2026-07-24 15:38:07,Data Science & AI
+384,Custom Clearance Data Analyst,MAALBARDAAR PVT LTD,Karachi,,2026-07-24 15:38:07,Data Science & AI
+385,Data Analyst (Marketing),foodpanda,Karachi,,2026-07-24 15:38:07,Data Science & AI
+386,Academic Research Writer – Data Analytics / Actuarial Science / Statistics,EccentricOne,Karachi,,2026-07-24 15:38:07,Data Science & AI
+387,Data Engineer,Dolphin Insights,Karachi,,2026-07-24 15:38:07,Software Engineering
+388,Customer Support Analyst (L1),Contour Software,Karachi,,2026-07-24 15:38:07,Data Science & AI
+389,Quality & Performance Analyst,Virtuosoft,Karachi,,2026-07-24 15:38:07,Data Science & AI
+390,Senior Product Analyst,VIDIZMO LLC,Karachi,,2026-07-24 15:38:07,Data Science & AI
+391,"Power Market Analyst - Dubai, UAE",Cobblestone Energy.,Karachi,,2026-07-24 15:38:07,Data Science & AI
+392,Quality Assurance / Sales Analyst (US Retail – CCTV & Sales Monitoring),Expert BOS,Karachi,,2026-07-24 15:38:07,Software Engineering
+393,Systems Analyst & Integration Specialist,Virtuosoft,Karachi,,2026-07-24 15:38:07,Data Science & AI
+394,SOC Engineer,Mobiz,Karachi,,2026-07-24 15:38:07,Software Engineering
+395,Senior Technical Business Analyst,VIDIZMO LLC,Karachi,,2026-07-24 15:38:07,Data Science & AI
+396,Product Owner,VIDIZMO LLC,Karachi,,2026-07-24 15:38:07,Management
+397,Solution Architect,Datamatics Technologies,Karachi,,2026-07-24 15:38:07,Software Engineering
+398,NOC Manager,Mobiz,Karachi,,2026-07-24 15:38:07,IT Infrastructure
+399,Senior Software Consultant - Databricks / Snowflake - Afternoon,10Pearls,Karachi,,2026-07-24 15:38:07,Software Engineering
+400,Senior Data Engineer,NorthBay Solutions,Islamabad,,2026-07-24 15:38:07,Software Engineering
+401,SOC Analyst L1,Zones,Islamabad,,2026-07-24 15:38:07,Data Science & AI
+402,Project Coordinator,Metavystic,Islamabad,,2026-07-24 15:38:07,Other
+403,Technical Product Manager,GRID Systems (PVT) Ltd.,Islamabad,,2026-07-24 15:38:07,Management
+404,Sr. Business Analyst II,Pakistan Single Window,Islamabad,,2026-07-24 15:38:07,Data Science & AI
+405,Quality Assurance and Test Analyst,Stella Technology,Islamabad,,2026-07-24 15:38:07,Software Engineering
+406,Product Analytics Partner,9D Technologies & Imagination AI,Rawalpindi,,2026-07-24 15:38:07,Other
+407,Senior Credit Analyst – MI & Reporting,Magna Foodservice Limited,Islamabad,,2026-07-24 15:38:07,Data Science & AI
+408,Senior Power BI Developer– Financial & Operational Dashboards,Provox Global Solutions,Islamabad,,2026-07-24 15:38:07,Software Engineering
+409,Senior Backend Developer,AutoScale Ventures,Islamabad,,2026-07-24 15:38:07,Software Engineering
+410,Systems & Operations Manager,AIO App Inc,Islamabad,,2026-07-24 15:38:07,Management
+411,GRC Associate,AIO App Inc,Islamabad,,2026-07-24 15:38:07,IT Infrastructure
+412,IAM Security Analyst,Zones,Islamabad,,2026-07-24 15:38:07,Data Science & AI
+413,Sr. Oracle Developer,Sequel Technologies,Rawalpindi,,2026-07-24 15:38:07,Software Engineering
+414,Systems Analyst,Alhazen Technologies,Islamabad,,2026-07-24 15:38:07,Data Science & AI
+415,Mechanical Engineer,Engineering Sector,Lahore,,2026-07-24 15:38:07,Engineering
+416,Mechanical Engineer,Nova Med Pharmaceutical Pvt Ltd.,Lahore,,2026-07-24 15:38:07,Engineering
+417,Quality Engineer (Mechanical),Byonyks Pvt Ltd,Lahore,,2026-07-24 15:38:07,Engineering
+418,Mechanical Engineer,Pakistan Chain Center,Lahore,,2026-07-24 15:38:07,Engineering
+419,Project Engineer,Avanceon MEA,Lahore,,2026-07-24 15:38:07,Software Engineering
+420,Production Engineer,Interwood Mobel,Lahore,,2026-07-24 15:38:07,Engineering
+421,Mechanical Engineer ( Plastic Injection Molding of Automotive Parts),TECHMEN,Lahore,,2026-07-24 15:38:07,Engineering
+422,Production Engineer – P2 (Injection Molding),Haier,Lahore,,2026-07-24 15:38:07,Engineering
+423,Material Engineer,Zameen Media Pvt. Ltd.,Lahore,,2026-07-24 15:38:07,Software Engineering
+424,MEP Engineer,Pakistan Children's Heart Foundation,Lahore,,2026-07-24 15:38:07,Engineering
+425,Site Engineer/ Supervisor,GT Trading & Engineering,Lahore,,2026-07-24 15:38:07,Software Engineering
+426,Mechanical Engineer (Elevators & Escalators),Milano,Lahore,,2026-07-24 15:38:07,Engineering
+427,MEP Site Engineer,Zameen Media Pvt. Ltd.,Lahore,,2026-07-24 15:38:07,Engineering
+428,Service Engineer / Service Technician (Electrical / Mechanical),TECHNOVISION PVT LTD,Lahore,,2026-07-24 15:38:07,Engineering
+429,Assistant Manager Mechanical Design,Zameen Media Pvt. Ltd.,Lahore,,2026-07-24 15:38:07,Engineering
+430,BMS Engineer,Delta International PK,Lahore,,2026-07-24 15:38:07,Software Engineering
+431,Jr. Engineer Reliability,Bureau Veritas,Lahore,,2026-07-24 15:38:07,Software Engineering
+432,Instrumentation Engineer,Avanceon MEA,Lahore,,2026-07-24 15:38:07,Engineering
+433,Fire Protection Design Engineer,AAW Group,Lahore,,2026-07-24 15:38:07,Software Engineering
+434,Engineer Reliability,Bureau Veritas,Lahore,,2026-07-24 15:38:07,Software Engineering
+435,Fire Protection Project & Commissioning Engineer,AAW Group,Lahore,,2026-07-24 15:38:07,Software Engineering
+436,Structural Engineers,Rukan Saqi Trading EST,Lahore,,2026-07-24 15:38:07,Engineering
+437,Senior Design Architect / Senior Design Engineer,SWITZEL INTERNATIONAL,Lahore,,2026-07-24 15:38:07,Software Engineering
+438,Solar Resident Engineer,PITCO,Lahore,,2026-07-24 15:38:07,Engineering
+439,Female Civil Engineer,Rukan Saqib Trading EST,Lahore,,2026-07-24 15:38:07,Engineering
+440,Female Civil Engineer,Rukan Saqi Trading EST,Lahore,,2026-07-24 15:38:07,Engineering
+441,Trainee Engineer-R&D (Mechanical),"Quality Vertex Integrated System Engineering Pvt,...",Karachi,,2026-07-24 15:38:07,Engineering
+442,Assistant Mechanical Engineer (Firefighting),MEP Solutions,Karachi,,2026-07-24 15:38:07,Engineering
+443,Assistant Mechanical Engineer,MEP Solutions,Karachi,,2026-07-24 15:38:07,Engineering
+444,Trainee Design Engineer - Mechanical,MTMS Engineering Pvt LTD,Karachi,,2026-07-24 15:38:07,Engineering
+445,Mechanical Engineer,Wärtsilä,Karachi,,2026-07-24 15:38:07,Engineering
+446,Trainee Engineer (Mechanical),Exide Pakistan Limited,Karachi,,2026-07-24 15:38:07,Engineering
+447,Mechanical Design Engineer,"Quality Vertex Integrated System Engineering Pvt,...",Karachi,,2026-07-24 15:38:07,Engineering
+448,QAQC Engineer (Mechanical),MEP Solutions,Karachi,,2026-07-24 15:38:07,Engineering
+449,Project Engineer,Recruitech Solutions.,Karachi,,2026-07-24 15:38:07,Software Engineering
+450,Project Engineer,Avery Dennison,Karachi,,2026-07-24 15:38:07,Software Engineering
+451,Electro-Mechanical Engineer,KAAB International,Karachi,,2026-07-24 15:38:07,Engineering
+452,Sr. Mechanical Engineer,Square One Mall,Karachi,,2026-07-24 15:38:07,Engineering
+453,Project Engineer,Syngenta Crop Protection,Karachi,,2026-07-24 15:38:07,Software Engineering
+454,Trainee Design Engineer,MTMS Engineering Pvt LTD,Karachi,,2026-07-24 15:38:07,Software Engineering
+455,Junior Electrical Design Engineer,Welumech Consultants Pvt Ltd.,Karachi,,2026-07-24 15:38:07,Engineering
+456,Design Engineer,Automobile Corporation of Pakistan,Karachi,,2026-07-24 15:38:07,Software Engineering
+457,Import/Export Executive (Mechanical Engineer),Meraj limited,Karachi,,2026-07-24 15:38:07,Engineering
+458,Shift Engineer - Production,Exide Pakistan Limited,Karachi,,2026-07-24 15:38:07,Engineering
+459,Production Engineer(KHI),Exide Pakistan Limited,Karachi,,2026-07-24 15:38:07,Engineering
+460,FEMALE Mechanical Design Engineers (Fresh & Mid-Level),S. Mehboob & Co.,Karachi,,2026-07-24 15:38:07,Engineering
+461,Job Vacancy: Trainee Engineer (Male-Female BOTH),Cosmos Engineering,Karachi,,2026-07-24 15:38:07,Software Engineering
+462,Solar Design Engineer,Synergy Corporation,Karachi,,2026-07-24 15:38:07,Engineering
+463,O&M Engineer,Goldwind Science&Technology Co.,Karachi,,2026-07-24 15:38:07,Software Engineering
+464,Automobile Engineer – Heavy Earth Moving Machinery (HEMM),Al-Muqeet Human Resources,Karachi,,2026-07-24 15:38:07,Software Engineering
+465,BMS Engineer,Delta International PK,Karachi,,2026-07-24 15:38:07,Software Engineering
+466,SR. SOLAR DESIGN ENGINEER (Post Sales),Optimum Advisory,Karachi,,2026-07-24 15:38:07,Engineering
+467,Senior Structural Design Engineer,Velosi,Karachi,,2026-07-24 15:38:07,Engineering
+468,Assistant Manager Development,Simcoe IT,Karachi,,2026-07-24 15:38:07,Management
+469,Mechanical Design Engineer,GENESIS SOLUTIONS PVT LTD,Islamabad,,2026-07-24 15:38:07,Engineering
+470,R&D Engineer (Mechanical ),Taraz Technologies Pvt. Ltd.,Rawalpindi,,2026-07-24 15:38:07,Engineering
+471,Mechanical Engineer,Catkin Engineering Sale & Services (Pvt) Ltd,Islamabad,,2026-07-24 15:38:07,Engineering
+472,Mechanical Design Engineer,Rastgar Engineering Company,Islamabad,,2026-07-24 15:38:07,Engineering
+473,Mechanical /HVAC Design Engineer,Reckon Consulting Engineers,Islamabad,,2026-07-24 15:38:07,Engineering
+474,Design Automation Engineer (Mechanical),GreyBeard,Islamabad,,2026-07-24 15:38:07,Engineering
+475,Engineering Manager,Veevo Tech,Islamabad,,2026-07-24 15:38:07,Software Engineering
+476,Senior Mechanical Design Engineer,Rastgar Engineering Company,Islamabad,,2026-07-24 15:38:07,Engineering
+477,Planning Engineer,Matar Al Baqmi Holding Company,Islamabad,,2026-07-24 15:38:07,Software Engineering
+478,Electrical Design Engineer,GENESIS SOLUTIONS PVT LTD,Islamabad,,2026-07-24 15:38:07,Engineering
+479,Lab Engineer - Mechanical Engineering (School of Mechanical & Manufacturing Engineering),National Univsersity of Sciences and Technology,Islamabad,,2026-07-24 15:38:07,Engineering
+480,Staff Accountant (UK),LumiMinds,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+481,Accountant,Ranglerz Digital Marketing,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+482,Restaurant Accountant,Tayyib Store,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+483,Mid Level Accountant (Canadian experienced),Adroit Accountax Pvt Ltd,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+484,Accountant (Hospital Experience Preferred),Naeem Hospital Lahore,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+485,Accountant,Petro Seal Enterprises,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+486,Accountant,Canadian City Gwadar Head Office Lahore,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+487,Jr. Accountant,STUDY MEDIC,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+488,Assistant Accountant,Contour Software,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+489,Senior Accountant,365 Care Group,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+490,Manager Accounts,Far 360 Consultancy,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+491,Accountant,Bestnet,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+492,Senior Internal Auditor,Steel Fabrication & Telecom Infrastructure...,Lahore,,2026-07-24 15:38:07,Software Engineering
+493,Assistant Manager Accounts,Voyage,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+494,Accountant – UAE Branch,Simcoe IT,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+495,Accountant Required ( only from Lahore ( 5 to 7 KM distance from DHA PH 5),Grace Marble & Granite,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+496,Customer Premises Associate (CPA),HRPSP - Your Strategic HR Partner,Lahore,,2026-07-24 15:38:07,IT Infrastructure
+497,Deputy Manager Taxation,Dynamic Packaging (Pvt) Ltd,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+498,Assistant Manager Taxation,Tajir,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+499,Accountant,AL-FAJAR INTERNATIONAL (PVT.) LIMITED,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+500,Full Cycle Book Keeper/Accountant,Mortgage Squad Advisors,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+501,Account Officer,Revolution Media,Lahore,,2026-07-24 15:38:07,Other
+502,Accountant-Lahore (Vetcon Pharma),Vetcon Pharmaceuticals,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+503,Accounts and Taxation Executive,Shams & Brothers,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+504,Accounts Executive – Travel & Tourism,The-Hiring,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+505,Accountant Admin,Dejure Technologies,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+506,Urgently Required Junior Accountant,Sultan Tag,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+507,Officer- Internal Audit,Raaziq International PVT LTD,Lahore,,2026-07-24 15:38:07,Software Engineering
+508,Senior Accountant (SEC-US Reporter),NorthBay Solutions,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+509,Tax Officer,Raaziq International PVT LTD,Lahore,,2026-07-24 15:38:07,Finance & Accounting
+510,ACCOUNTANT,Prime Medicos,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+511,Accountant,Basharah Pharma,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+512,Accountant,Rotana Travel and tours,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+513,Assistant Accountant finance,Signtrade International,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+514,Head of Accounts (Night Shift),Careers Connect,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+515,Assistant Accountant,Digital Bee Studio,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+516,Junior Accountant,Creative Chaos,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+517,Accountant,United Charter School NJB Clifton Campus,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+518,ACCOUNTANT,mh enterprises,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+519,Accountant,AssistRing,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+520,Accountant,SAB,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+521,Assistant Accountant,BHY HOSPITAL,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+522,Assistant Accountant,Muller and Phipps Pakistan,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+523,Junior Accountant — Karachi Back Office,UEB Ventures Financing Broker L.L.C,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+524,Junior Accountant,Coatinks (Private) Limited,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+525,US Tax Accountant,ASPIRE 92 (SMC-PRIVATE) LIMITED,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+526,ACCOUNTANT (for US Client) Night Shift,Cognizance Solutions pvt ltd,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+527,Manager Financial Reporting (Night Shift),Careers Connect,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+528,Real Estate Accountant (U.S. GAAP),Jobs Club,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+529,Supervisor Accounts (International) (SA(296),SMB Services,Karachi,,2026-07-24 15:38:07,Software Engineering
+530,Manager Finance(CA/CMA/ACCA),Joyland (Pvt) Ltd,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+531,Assistant Manager Internal Audit,AAI,Karachi,,2026-07-24 15:38:07,Software Engineering
+532,Property Accountant | Accounts Management,HR Ways,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+533,Senior Financial Accountant,Contour Software,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+534,Commercial & Financial Auditor,Barqtron Engineering Solutions,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+535,ACCA Qualified Accountant,Luna Coffee,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+536,Junior Account,Clixura Solution,Karachi,,2026-07-24 15:38:07,Other
+537,US Tax Accountant,Arthur Lawrence,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+538,Junior Accountant - Custom Clearing Agency,Human Capital HR Solutions,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+539,Accounts Executive,Amron oil company (PVT) ltd,Karachi,,2026-07-24 15:38:07,Finance & Accounting
+540,Accountant,Unity Exploration Pvt Ltd,Rawalpindi,,2026-07-24 15:38:07,Finance & Accounting
+541,Accountant,SMS Technologies,Islamabad,,2026-07-24 15:38:07,Finance & Accounting
+542,Junior Accountant,Misix Communication,Islamabad,,2026-07-24 15:38:07,Finance & Accounting
+543,Accountant,BGE Limited,Islamabad,,2026-07-24 15:38:07,Finance & Accounting
+544,Bookkeeper / Accountant (UK BASED FIRM),Linktax,Islamabad,,2026-07-24 15:38:07,Finance & Accounting
+545,Accountant,Ropstam Solutions Inc.,Islamabad,,2026-07-24 15:38:07,Finance & Accounting
+546,Jr.Accountant,Shan Marketing Services,Islamabad,,2026-07-24 15:38:07,Finance & Accounting
+547,Cashier/Jr. Accountant - Islamabad,Grand City,Islamabad,,2026-07-24 15:38:07,Finance & Accounting
+548,Accountant / Client Manager,Virtual Bookkeepers 365,Islamabad,,2026-07-24 15:38:07,Finance & Accounting
+549,Full Time Accountant,Faraz And Brothers,Islamabad,,2026-07-24 15:38:07,Finance & Accounting
+550,Accountant for Grocery Store (Islamabad),Esajee's,Islamabad,,2026-07-24 15:38:07,Finance & Accounting
+551,Accounts Interns,confidentioal,Islamabad,,2026-07-24 15:38:07,Software Engineering
+552,Accountant,XS International,Islamabad,,2026-07-24 15:38:07,Finance & Accounting
+553,Senior Accountant-UK,c2o,Islamabad,,2026-07-24 15:38:07,Finance & Accounting
+554,Accountant Intern,Hectacore Systems,Islamabad,,2026-07-24 15:38:07,Software Engineering
+555,Cost Accountant,Akbar Associates Group,Islamabad,,2026-07-24 15:38:07,Finance & Accounting
+556,Accountant(Male),LALA Group of Companies,Rawalpindi,,2026-07-24 15:38:07,Finance & Accounting
+557,Internal Auditor,Shan Marketing Services,Islamabad,,2026-07-24 15:38:07,Software Engineering
+558,Payroll Accountant (Pakistan),Sovereign Express Trade Limited,Rawalpindi,,2026-07-24 15:38:07,Finance & Accounting
+559,Accounts Executive,Flink Freight Logistics Inc,Rawalpindi,,2026-07-24 15:38:07,Finance & Accounting
+560,R2R Specialist,Zones,Islamabad,,2026-07-24 15:38:07,Other
+561,Internal Audit Officer,Interwood Mobel,Islamabad,,2026-07-24 15:38:07,Software Engineering
+562,Tax Consultant/Accountant,Islamabad Specialist Hospital,Rawalpindi,,2026-07-24 15:38:07,Finance & Accounting
+563,Remote Tax Professional Resource - Project Based Jobs,BMT PRIVATE LIMITED,Rawalpindi,,2026-07-24 15:38:07,Finance & Accounting
+564,Senior Accountant (SEC-US Reporter),NorthBay Solutions,Islamabad,,2026-07-24 15:38:07,Finance & Accounting
+565,Accountant Intern (Female),TT Technologies pvt Ltd (PhoneCase.pk),Islamabad,,2026-07-24 15:38:07,Software Engineering
+566,Audit internship opportunity for CA and ACCA affiliates,Daxin Global,Islamabad,,2026-07-24 15:38:07,Software Engineering
+567,Tax Manager - ISB,PEOPLE PVT LTD,Islamabad,,2026-07-24 15:38:07,Finance & Accounting
+568,Tax Manager,DiLucci CPA Firm,Other,,2026-07-24 15:38:07,Finance & Accounting
+569,Accounting Internee (ACCA / CA Student),Effectudio,Rawalpindi,,2026-07-24 15:38:07,Software Engineering
+570,Intern (Electrical Engineer),Nextreme Techno Solutions Pvt Limited,Lahore,,2026-07-24 15:38:07,Engineering
+571,Electrical Engineer,Root4tech,Lahore,,2026-07-24 15:38:07,Engineering
+572,Technical Sales Engineer (Electrical),S.A. Hamid & Co,Lahore,,2026-07-24 15:38:07,Engineering
+573,Electrical Sales Engineer,S. A. Hamid & Co.,Lahore,,2026-07-24 15:38:07,Engineering
+574,Electrical Engineer (Elevators & Escalators),Milano,Lahore,,2026-07-24 15:38:07,Engineering
+575,MEP Site Engineer - International Projects,Aesom Private Limited,Lahore,,2026-07-24 15:38:07,Engineering
+576,Electrical Engineer Interns - G4S Digital Solutions,Qureos Inc,Lahore,,2026-07-24 15:38:07,Engineering
+577,Project Engineer,MSE,Lahore,,2026-07-24 15:38:07,Software Engineering
+578,Manager Energy Optimization,Steel Fabrication & Telecom Infrastructure...,Lahore,,2026-07-24 15:38:07,Management
+579,Lead Design & Proposal Engineer,Avanceon MEA,Lahore,,2026-07-24 15:38:07,Software Engineering
+580,Solar Design Engineer (SDE),PITCO,Lahore,,2026-07-24 15:38:07,Engineering
+581,Solar DraftsMan/ PV designer,Solar PVT LTD,Lahore,,2026-07-24 15:38:07,Engineering
+582,Electronics / Application Engineer,Electrical Engineering Services,Lahore,,2026-07-24 15:38:07,Software Engineering
+583,Engineer - Instrumentation (North),Atlas Controls (Pvt) Ltd,Lahore,,2026-07-24 15:38:07,Engineering
+584,Internship Leading to Job – Application Engineer,Voltonic Solution Pvt. Ltd.,Lahore,,2026-07-24 15:38:07,Software Engineering
+585,Electrical / Electronics Engineer,Feroze Power Limited,Karachi,,2026-07-24 15:38:07,Engineering
+586,Assistant Engineer- Electrical/Electronics,International Industries Limited,Karachi,,2026-07-24 15:38:07,Engineering
+587,ELECTRICAL ENGINEER,ALPHA TEA PVT LTD,Karachi,,2026-07-24 15:38:07,Engineering
+588,Mid-Level Electrical Design Engineers,S. Mehboob & Co.,Karachi,,2026-07-24 15:38:07,Engineering
+589,"Project Engineer (PLC/SCADA, Electrical, ATG & Site Works)",Avanceon MEA,Karachi,,2026-07-24 15:38:07,Engineering
+590,Electrical Design Engineer (Solar),Exide Pakistan Limited,Karachi,,2026-07-24 15:38:07,Engineering
+591,Electrical (Fresher / 1 Year Experience),Hiring Pakistan,Karachi,,2026-07-24 15:38:07,Engineering
+592,Executive - Electrical & Instrumentation (E&I),AGILE HR,Karachi,,2026-07-24 15:38:07,Engineering
+593,Female Estimation Engineer BE Electronics/Electrical,TELECOM ENGINEERING COMPANY,Karachi,,2026-07-24 15:38:07,Engineering
+594,LV Switchgear Design Engineer,PanelSketch International,Karachi,,2026-07-24 15:38:07,Software Engineering
+595,Project Engineer,Synergy Corporation,Karachi,,2026-07-24 15:38:07,Software Engineering
+596,Graduate Trainee Engineer – Electronics / Mechatronics (Fresh Graduates),CSR SERVICES LLC,Karachi,,2026-07-24 15:38:07,Engineering
+597,Engineer - Instrumentation (South),Atlas Controls (Pvt) Ltd,Karachi,,2026-07-24 15:38:07,Engineering
+598,Shift Engineer,Wärtsilä,Karachi,,2026-07-24 15:38:07,Software Engineering
+599,Mechatronics Engineer,Imprint Packaging Solutions,Karachi,,2026-07-24 15:38:07,Engineering
+600,"Executive Engineer Substation Automation Systems – Pakistan, Karachi",Siemens,Karachi,,2026-07-24 15:38:07,Engineering
+601,Electronics Engineer,Texlabs,Karachi,,2026-07-24 15:38:07,Software Engineering
+602,Senior Electronics Engineer / Senior Electronics Technician,Aice,Karachi,,2026-07-24 15:38:07,Software Engineering
+603,Primary Lead Engineer,Siemens Energy,Karachi,,2026-07-24 15:38:07,Software Engineering
+604,Design Engineer - Solar,Exide Pakistan Limited,Karachi,,2026-07-24 15:38:07,Engineering
+605,Technical Associate,Siemens Energy,Karachi,,2026-07-24 15:38:07,IT Infrastructure
+606,Solar PV Design Engineer,EcoEnergy Solutions,Karachi,,2026-07-24 15:38:07,Engineering
+607,Field Engineer/ Senior Field Engineer - Saddar - Lines Area - MA Jinnah Road - Kharadar,Innovative Pvt Ltd,Karachi,,2026-07-24 15:38:07,Software Engineering
+608,Solar Design Engineer (Pre-sales),Synergy Corporation,Karachi,,2026-07-24 15:38:07,Engineering
+609,UPS & Solar Technician/Engineer,Power Technology International Pvt Ltd,Karachi,,2026-07-24 15:38:07,Engineering
+610,Senior Design & Application Engineer,Avanceon MEA,Karachi,,2026-07-24 15:38:07,Software Engineering
+611,Solar Manager,Intermark product lines pvt ltd,Karachi,,2026-07-24 15:38:07,Engineering
+612,Mechanical Engineer (Food & Packing),GOFY CANDY,Other,,2026-07-24 15:38:07,Engineering
+613,Junior Software Engineer,Code Creators Inc,Other,,2026-07-24 15:38:07,Software Engineering
+614,Electrical Power Design Engineer,Reckon Consulting Engineers,Islamabad,,2026-07-24 15:38:07,Engineering
+615,Assistant Electrical Engineer (Murree Brewery Company),Murree Brewery Company,Rawalpindi,,2026-07-24 15:38:07,Engineering
+616,Design Engineer - EPLAN,QZ Engineering Private Limited,Islamabad,,2026-07-24 15:38:07,Software Engineering
+617,Assistant Instrumentation Engineer,Murree Brewery Company,Rawalpindi,,2026-07-24 15:38:07,Engineering
+618,ELECTRICAL INTERN HIRING for MALE – A.R. Brothers,A.R.Brothers,Rawalpindi,,2026-07-24 15:38:07,Engineering
+619,Power Design Engineer,One Network,Rawalpindi,,2026-07-24 15:38:07,Software Engineering
+620,ELV Design Engineer,One Network,Rawalpindi,,2026-07-24 15:38:07,Software Engineering
