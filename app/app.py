@@ -27,7 +27,6 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scraper.utils import classify_city, classify_category, extract_seniority
-from database.db_manager import get_all_jobs
 import scipy.sparse as sp
 from sklearn.feature_extraction.text import TfidfVectorizer
 import warnings
@@ -43,13 +42,13 @@ st.set_page_config(
 # 2. Data and Model Loading
 @st.cache_data
 def load_data():
-    df = get_all_jobs()
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    csv_path = os.path.join(base_dir, "data", "cleaned_data.csv")
+    df = pd.read_csv(csv_path)
     df["seniority"] = df["title"].apply(extract_seniority)
-
-    df["category"] = df["title"].apply(classify_category)    
-
-    df["city"] = df["city"].apply(classify_city)  
-    return df     
+    df["category"] = df["title"].apply(classify_category)
+    df["city"] = df["city"].apply(classify_city)
+    return df
 
 
 @st.cache_resource
